@@ -24,3 +24,7 @@
     @apply bg-gray-100; /* Styling for the corner in case of both horizontal and vertical scroll */
   }
 }
+
+body {
+  @apply font-poppins;
+}

@@ -2,10 +2,10 @@ import Form from "./Form";
 
 export default function ContactUs() {
   return (
-    <section className="px-4 py-8 bg-gradient-blue-sky-primary md:px-12 lg:px-20">
-      <div className="flex flex-col  py-12 gap-12 lg:flex-row lg:justify-between">
+    <section className="m-10 rounded-3xl px-4 bg-gradient-blue-sky-primary md:px-12 lg:px-20">
+      <div className="flex flex-col py-5 gap-12 lg:flex-row lg:justify-between">
         <div className="text-white text-justify lg:basis-1/2">
-          <span className="py-8 block text-white font-bold uppercase text-8xl font-poppins mb-10">
+          <span className="py-8 block text-white font-bold uppercase text-center lg:text-start text-5xl sm:text-6xl xl:text-7xl font-poppins mb-5 lg:mb-10">
             Contact Us
           </span>
           <span className="text-lg font-medium uppercase md:text-xl lg:text-2xl">
