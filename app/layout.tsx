@@ -36,10 +36,17 @@ export default function RootLayout({
       className={`${poppins.variable} ${roboto.variable} ${montserrat.variable}`}
     >
       <body>
-        <div className="sticky top-0 overflow-x-hidden">
+        <div className="sticky top-0">
           <Navbar />
           <MobileNavDrawer />
         </div>
+        <div className="text-9xl">Temp</div>
+        <div className="text-9xl">Temp</div>
+        <div className="text-9xl">Temp</div>
+        <div className="text-9xl">Temp</div>
+        <div className="text-9xl">Temp</div>
+        <div className="text-9xl">Temp</div>
+        <div className="text-9xl">Temp</div>
         {children}
       </body>
     </html>
