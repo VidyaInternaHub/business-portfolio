@@ -6,7 +6,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { useMobileNavDrawer } from "@/hooks/useMobileNavDrawer";
 import { navbarLinks } from "@/data/data";
 import Logo from "../Logo";
-import PrimaryButton from "../Button";
+import Button from "../Button";
 
 export default function Navbar() {
   const mobileNavDrawer = useMobileNavDrawer();
@@ -77,14 +77,14 @@ export default function Navbar() {
         </ul>
         {/* CTA Button */}
         <div className="flex space-x-6">
-          <PrimaryButton
+          <Button
             buttonType="highlightButton"
             href="#"
             className="hidden md:block"
             ariaLabel="Book a Consultation"
           >
             Book a Consultation
-          </PrimaryButton>
+          </Button>
           {/* Mobile Menu Button */}
           <button
             onClick={

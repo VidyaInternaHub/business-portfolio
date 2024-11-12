@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 
-interface PrimaryButtonProps {
+interface ButtonProps {
   children: React.ReactNode;
   buttonType?: "primaryButton" | "highlightButton";
   onClick?: () => void;
@@ -13,7 +13,7 @@ interface PrimaryButtonProps {
   ariaLabel?: string;
 }
 
-export default function PrimaryButton({
+export default function Button({
   children,
   buttonType = "primaryButton",
   onClick,
@@ -22,7 +22,7 @@ export default function PrimaryButton({
   disabled = false,
   type = "button",
   ariaLabel,
-}: PrimaryButtonProps) {
+}: ButtonProps) {
   const router = useRouter();
 
   const handleClick = () => {
