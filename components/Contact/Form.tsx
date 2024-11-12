@@ -1,12 +1,9 @@
-"use client"
+"use client";
 
-import PrimaryButton from "../common/PrimaryButton";
+import Button from "../common/Button";
 
 export default function Form() {
-
-  const onSubmit = () => {
-
-  }
+  const onSubmit = () => {};
 
   return (
     <form className="flex flex-col gap-4 py-8">
@@ -36,10 +33,9 @@ export default function Form() {
           VidyaInterna Hub Privacy Policy
         </span>
       </div>
-      <PrimaryButton 
-        onClick={onSubmit}
-      >Send</PrimaryButton>
-      
+      <Button buttonType="highlightButton" onClick={onSubmit}>
+        Send
+      </Button>
     </form>
   );
 }
