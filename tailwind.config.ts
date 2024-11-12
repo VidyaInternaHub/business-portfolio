@@ -12,7 +12,7 @@ export default {
         primary: "#0057D8", // Blue (Reliable and Professional)
         secondary: "#6B7280", // Gray (Balanced and Modern)
         accent: "#66CCFF", // Sky Blue (Clean, Approachable, and Fresh)
-        background: "F7F8FA", // Off-White (Light and Minimal)
+        background: "#F7F8FA", // Off-White (Light and Minimal)
         highlight: "#FF6F3C", // Orange (Adds a subtle call to action)
         bgFooter: "#1f2937",
       },
