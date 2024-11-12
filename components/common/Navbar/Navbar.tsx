@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import { navbarLinks } from "@/data/data";
-import Logo from "../common/Logo";
-import PrimaryButton from "../common/PrimaryButton";
+import Logo from "../Logo";
+import PrimaryButton from "../PrimaryButton";
 
 export default function Navbar() {
   return (
