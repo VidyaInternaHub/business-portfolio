@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Roboto, Montserrat } from "next/font/google";
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/components/common/Navbar/Navbar";
+import MobileNavDrawer from "@/components/common/Navbar/MobileNavDrawer";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -34,7 +35,16 @@ export default function RootLayout({
       className={`${poppins.variable} ${roboto.variable} ${montserrat.variable}`}
     >
       <body>
-        <Navbar />
+        <div className="sticky top-0">
+          <Navbar />
+          <MobileNavDrawer />
+        </div>
+        <div className="text-9xl">temp</div>
+        <div className="text-9xl">temp</div>
+        <div className="text-9xl">temp</div>
+        <div className="text-9xl">temp</div>
+        <div className="text-9xl">temp</div>
+        <div className="text-9xl">temp</div>
         {children}
       </body>
     </html>

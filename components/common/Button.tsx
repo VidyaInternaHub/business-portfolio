@@ -2,8 +2,9 @@
 
 import { useRouter } from "next/navigation";
 
-interface PrimaryButtonProps {
+interface ButtonProps {
   children: React.ReactNode;
+  buttonType?: "primaryButton" | "highlightButton";
   onClick?: () => void;
   href?: string;
   className?: string;
@@ -12,15 +13,16 @@ interface PrimaryButtonProps {
   ariaLabel?: string;
 }
 
-export default function PrimaryButton({
+export default function Button({
   children,
+  buttonType = "primaryButton",
   onClick,
   href,
   className,
   disabled = false,
   type = "button",
   ariaLabel,
-}: PrimaryButtonProps) {
+}: ButtonProps) {
   const router = useRouter();
 
   const handleClick = () => {
@@ -45,7 +47,11 @@ export default function PrimaryButton({
       className={`text-white font-montserrat py-2 px-4 rounded-lg shadow-lg ${
         disabled ? "" : "hover:opacity-90"
       } transition-opacity duration-300 ${
-        disabled ? "bg-secondary" : "bg-highlight"
+        disabled
+          ? "bg-secondary"
+          : buttonType === "primaryButton"
+          ? "bg-primary"
+          : "bg-highlight"
       } ${disabled ? "cursor-default" : ""} ${className}`}
       disabled={disabled}
       aria-label={ariaLabel}
