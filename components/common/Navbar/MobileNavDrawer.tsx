@@ -35,6 +35,7 @@ export default function MobileNavDrawer() {
         </ul>
         <div className="w-full sm:w-2/3 p-6 block md:hidden">
           <PrimaryButton
+          buttonType="highlightButton"
             href="#"
             className="w-full py-4 text-center text-lg font-medium"
             ariaLabel="Book a Consultation"

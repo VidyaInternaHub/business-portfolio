@@ -39,6 +39,12 @@ export default function RootLayout({
           <Navbar />
           <MobileNavDrawer />
         </div>
+        <div className="text-9xl">temp</div>
+        <div className="text-9xl">temp</div>
+        <div className="text-9xl">temp</div>
+        <div className="text-9xl">temp</div>
+        <div className="text-9xl">temp</div>
+        <div className="text-9xl">temp</div>
         {children}
       </body>
     </html>
