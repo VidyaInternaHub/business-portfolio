@@ -1,12 +1,17 @@
+"use client";
+
 import Link from "next/link";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useMobileNavDrawer } from "@/hooks/useMobileNavDrawer";
 import { navbarLinks } from "@/data/data";
 import Logo from "../common/Logo";
 import PrimaryButton from "../common/PrimaryButton";
 
 export default function Navbar() {
+  const mobileNavDrawer = useMobileNavDrawer();
+
   return (
-    <nav className="bg-gradient-blue-navy-secondary px-4 py-4 md:px-20 md:py-10 lg:px-10 xl:px-20 font-poppins">
+    <nav className="w-screen bg-gradient-blue-navy-secondary px-4 py-4 md:px-20 md:py-10 lg:px-10 xl:px-20 font-poppins">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo Section */}
         <div className="text-white font-bold text-lg sm:text-xl md:text-2xl">
@@ -43,10 +48,15 @@ export default function Navbar() {
           </PrimaryButton>
           {/* Mobile Menu Button */}
           <button
+            onClick={
+              mobileNavDrawer.isOpen
+                ? mobileNavDrawer.close
+                : mobileNavDrawer.open
+            }
             className="block xl:hidden text-white text-2xl focus:outline-none"
             aria-label="Menu"
           >
-            <FaBars />
+            {mobileNavDrawer.isOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
       </div>
