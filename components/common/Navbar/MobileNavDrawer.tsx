@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMobileNavDrawer } from "@/hooks/useMobileNavDrawer";
 import { navbarLinks } from "@/data/data";
-import PrimaryButton from "../common/PrimaryButton";
+import PrimaryButton from "../Button";
 
 export default function MobileNavDrawer() {
   const mobileNavDrawer = useMobileNavDrawer();
