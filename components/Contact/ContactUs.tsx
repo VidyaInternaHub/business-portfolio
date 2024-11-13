@@ -2,17 +2,17 @@ import Form from "./Form";
 
 export default function ContactUs() {
   return (
-    <section className="m-10 rounded-3xl px-4 bg-gradient-blue-sky-primary md:px-12 lg:px-20">
+    <section className="px-4 md:px-12 lg:px-20 py-10">
       <div className="flex flex-col py-5 gap-12 lg:flex-row lg:justify-between">
-        <div className="text-white text-justify lg:basis-1/2">
-          <span className="py-8 block text-white font-bold uppercase text-center lg:text-start text-5xl sm:text-6xl xl:text-7xl font-poppins mb-5 lg:mb-10">
+        <div className="lg:basis-1/2">
+          <span className="py-8 block font-semibold text-5xl sm:text-6xl xl:text-7xl">
             Contact Us
           </span>
-          <span className="text-lg font-medium uppercase md:text-xl lg:text-2xl">
-            We{`'`} re ready to turn your vision into reality with these key
-            services:
+           <span className="text-lg font-light md:text-xl lg:text-2xl">
+            We{`'`}re ready to turn your vision into reality with these key
+            services
           </span>
-          <div className="flex flex-col pt-8 space-y-3">
+          {/* <div className="flex flex-col pt-8 space-y-3">
             <div className="space-x-1 md:text-lg">
               <span className="font-medium">Web Development: </span>
               <span>
@@ -36,11 +36,11 @@ export default function ContactUs() {
                 satisfaction and functionality.
               </span>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="lg:basis-5/12">
-          <div className="px-4 py-8 bg-white rounded-xl md:px-8 lg:px-12">
-            <span className="block text-xl text-center font-semibold uppercase">
+          <div className="px-4 py-8 bg-accent bg-opacity-30 shadow-2xl rounded-xl md:px-8 lg:px-12">
+            <span className="pl-5 block text-xl font-semibold uppercase">
               Your Success Story Starts Here
             </span>
             <Form />

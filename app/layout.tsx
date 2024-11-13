@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Poppins, Roboto, Montserrat } from "next/font/google";
+import { Poppins, Roboto, Montserrat, Inter } from "next/font/google";
 import Navbar from "@/components/common/Navbar/Navbar";
 import MobileNavDrawer from "@/components/common/Navbar/MobileNavDrawer";
-import Footer from "@/components/common/Footer/Footer"
+import Footer from "@/components/common/Footer/Footer";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -19,6 +19,11 @@ const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
   variable: "--font-montserrat",
+});
+const inter = Inter({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 export const metadata: Metadata = {
   title: "Vidya Interna Hub business",

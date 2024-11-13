@@ -10,21 +10,21 @@ export default function Form() {
       <input
         type="text"
         placeholder="Name"
-        className="w-full p-2 border border-slate-500 rounded-md outline-none focus:border-highlight"
+        className="w-full px-5 py-3 border border-slate-500 rounded-full outline-none focus:border-highlight"
       />
       <input
         type="email"
         placeholder="Email"
-        className="w-full p-2 border border-slate-500 rounded-md outline-none focus:border-highlight"
+        className="w-full px-5 py-3 border border-slate-500 rounded-full outline-none focus:border-highlight"
       />
       <input
         type="number"
         placeholder="Phone no."
-        className="w-full p-2 border border-slate-500 rounded-md outline-none focus:border-highlight"
+        className="w-full px-5 py-3 border border-slate-500 rounded-full outline-none focus:border-highlight"
       />
       <textarea
         placeholder="How we can help you?"
-        className="w-full h-24 resize-none overflow-auto p-2 border border-slate-500 rounded-md outline-none focus:border-highlight"
+        className="w-full h-24 resize-none overflow-auto p-2 border border-slate-500 rounded-2xl outline-none focus:border-highlight"
       ></textarea>
       <div className="flex items-start gap-2">
         <input type="checkbox" className="mt-1" />
@@ -33,9 +33,7 @@ export default function Form() {
           VidyaInterna Hub Privacy Policy
         </span>
       </div>
-      <Button buttonType="highlightButton" onClick={onSubmit}>
-        Send
-      </Button>
+      <Button buttonType="primaryDarkButton" onClick={onSubmit}>Send</Button>
     </form>
   );
 }
