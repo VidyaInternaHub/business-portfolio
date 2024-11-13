@@ -1,3 +1,4 @@
+import Card from "../common/Card";
 import Form from "./Form";
 
 export default function ContactUs() {
@@ -8,7 +9,7 @@ export default function ContactUs() {
           <span className="py-8 block font-semibold text-5xl sm:text-6xl xl:text-7xl">
             Contact Us
           </span>
-           <span className="text-lg font-light md:text-xl lg:text-2xl">
+          <span className="text-lg font-light md:text-xl lg:text-2xl">
             We{`'`}re ready to turn your vision into reality with these key
             services
           </span>
@@ -39,12 +40,18 @@ export default function ContactUs() {
           </div> */}
         </div>
         <div className="lg:basis-5/12">
-          <div className="px-4 py-8 bg-accent bg-opacity-30 shadow-2xl rounded-xl md:px-8 lg:px-12">
+          {/* <div className="px-4 py-8 bg-accent bg-opacity-30 shadow-2xl rounded-3xl md:px-8 lg:px-12">
             <span className="pl-5 block text-xl font-semibold uppercase">
               Your Success Story Starts Here
             </span>
             <Form />
-          </div>
+          </div> */}
+          <Card className="shadow-2xl">
+            <span className="pl-5 block text-xl font-semibold uppercase">
+              Your Success Story Starts Here
+            </span>
+            <Form />
+          </Card>
         </div>
       </div>
     </section>
