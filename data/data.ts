@@ -1,5 +1,20 @@
-import { FaFacebook, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaDocker, FaAws, FaGitAlt } from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiExpress,
+  SiMongodb,
+  SiPostgresql,
+  SiNodedotjs,
+  SiReact,
+} from "react-icons/si";
+
 export const navbarLinks = [
+  {
+    name: "Home",
+    url: "/",
+  },
   {
     name: "Services",
     url: "/services",
@@ -25,6 +40,28 @@ export const navbarLinks = [
     url: "/blogs",
   },
 ];
+
+export const techStackData = {
+  language: [{ icon: SiTypescript, name: "TypeScript" }],
+  frontend: [
+    { icon: SiReact, name: "React" },
+    { icon: SiNextdotjs, name: "Next.js" },
+    { icon: SiTailwindcss, name: "Tailwind CSS" },
+  ],
+  backend: [
+    { icon: SiNodedotjs, name: "Node.js" },
+    { icon: SiExpress, name: "Express" },
+  ],
+  database: [
+    { icon: SiMongodb, name: "MongoDB" },
+    { icon: SiPostgresql, name: "PostgreSQL" },
+  ],
+  devops: [
+    { icon: FaDocker, name: "Docker" },
+    { icon: FaAws, name: "AWS" },
+    { icon: FaGitAlt, name: "Git" },
+  ],
+};
 
 export const testimonialsData = [
   {
