@@ -28,7 +28,7 @@ export default function Form() {
       ></textarea>
       <div className="flex items-start gap-2">
         <input type="checkbox" className="mt-1" />
-        <span className="text-sm">
+        <span className="text-secondary text-sm">
           By sending this form I confirm that I have read and accept
           VidyaInterna Hub Privacy Policy
         </span>
