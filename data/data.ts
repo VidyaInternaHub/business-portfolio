@@ -9,12 +9,20 @@ export const navbarLinks = [
     url: "/projects",
   },
   {
+    name: "Tech Stack",
+    url: "/techstack",
+  },
+  {
     name: "About",
     url: "/about",
   },
   {
     name: "Contact",
     url: "/contact",
+  },
+  {
+    name: "Blogs",
+    url: "/blogs",
   },
 ];
 
