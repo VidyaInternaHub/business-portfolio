@@ -1,39 +1,42 @@
 "use client";
 
 import Button from "../common/Button";
+import Input from "../common/Input";
 
 export default function Form() {
   const onSubmit = () => {};
 
   return (
-    <form className="flex flex-col gap-4 py-8">
-      <input
-        type="text"
-        placeholder="Name"
-        className="w-full px-5 py-3 border border-slate-500 rounded-full outline-none focus:border-highlight"
-      />
-      <input
-        type="email"
-        placeholder="Email"
-        className="w-full px-5 py-3 border border-slate-500 rounded-full outline-none focus:border-highlight"
-      />
-      <input
-        type="number"
-        placeholder="Phone no."
-        className="w-full px-5 py-3 border border-slate-500 rounded-full outline-none focus:border-highlight"
-      />
-      <textarea
-        placeholder="How we can help you?"
-        className="w-full h-24 resize-none overflow-auto p-2 border border-slate-500 rounded-2xl outline-none focus:border-highlight"
-      ></textarea>
-      <div className="flex items-start gap-2">
-        <input type="checkbox" className="mt-1" />
-        <span className="text-secondary text-sm">
-          By sending this form I confirm that I have read and accept
-          VidyaInterna Hub Privacy Policy
-        </span>
+    <form>
+      <div className="flex flex-col py-8">
+        <Input label="Full Name" placeholder="eg: John Doe" />
+        <Input label="Email" type="email" placeholder="eg: johndoe@email.com" />
+        <Input label="Phone no." type="number" placeholder="eg: 99999 99999" />
+        <div className="mb-6">
+          <label className="block font-medium text-gray-900">
+            About your project
+          </label>
+          <div className="mt-2">
+            <textarea
+              id="about"
+              name="about"
+              rows={3}
+              className="block w-full rounded-md border-0 py-2 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600"
+              defaultValue={""}
+            />
+          </div>
+        </div>
+        <div className="mb-4 flex items-start gap-2">
+          <input type="checkbox" className="mt-1" />
+          <span className="text-gray-700 text-sm">
+            By sending this form I confirm that I have read and accept
+            VidyaInterna Hub Privacy Policy
+          </span>
+        </div>
+        <Button buttonType="primaryDarkButton" onClick={onSubmit}>
+          Send
+        </Button>
       </div>
-      <Button buttonType="primaryDarkButton" onClick={onSubmit}>Send</Button>
     </form>
   );
 }

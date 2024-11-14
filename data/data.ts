@@ -74,3 +74,27 @@ export const footerServices = [
 //   { icon: <FaLinkedin />, label: "LinkedIn" },
 //   { icon: <FaYoutube />, label: "YouTube" },
 // ];
+
+export const projectsData = [
+  {
+    img: "project-1.png",
+    title: "E-commerce Website Redesign",
+    description: "Revamped an online store to improve user experience and sales",
+    url: "",
+    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"]
+  },
+  {
+    img: "project-2.png",
+    title: "Mobile App Development for Fitness Tracking",
+    description: "Created an intuitive fitness app for real-time progress tracking.",
+    url: "",
+    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"]
+  },
+  {
+    img: "project-1.png",
+    title: "Food Delivery App Design",
+    description: "Created an intuitive mobile app for seamless food ordering.",
+    url: "",
+    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"]
+  },
+]
