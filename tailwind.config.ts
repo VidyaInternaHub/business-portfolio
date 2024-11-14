@@ -10,6 +10,7 @@ export default {
     extend: {
       colors: {
         primary: "#0057D8", // Blue (Reliable and Professional)
+        primaryDark: "#0F172A", // Dark Blue (Trustworthy and Secure)
         secondary: "#6B7280", // Gray (Balanced and Modern)
         accent: "#66CCFF", // Sky Blue (Clean, Approachable, and Fresh)
         background: "#F7F8FA", // Off-White (Light and Minimal)
@@ -44,6 +45,7 @@ export default {
         poppins: ["var(--font-poppins)", "sans-serif"],
         roboto: ["var(--font-roboto)", "sans-serif"],
         montserrat: ["var(--font-montserrat)", "sans-serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
       },
     },
   },

@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 interface ButtonProps {
   children: React.ReactNode;
-  buttonType?: "primaryButton" | "highlightButton";
+  buttonType?: "primaryButton" | "primaryDarkButton" | "highlightButton";
   onClick?: () => void;
   href?: string;
   className?: string;
@@ -24,6 +24,19 @@ export default function Button({
   ariaLabel,
 }: ButtonProps) {
   const router = useRouter();
+
+  const buttonColor = () => {
+    switch (buttonType) {
+      case "primaryButton":
+        return "bg-primary";
+      case "primaryDarkButton":
+        return "bg-primaryDark";
+      case "highlightButton":
+        return "bg-highlight";
+      default:
+        return "bg-[#0F172A]";
+    }
+  };
 
   const handleClick = () => {
     if (onClick) {
@@ -46,12 +59,10 @@ export default function Button({
       onClick={disabled ? undefined : handleClick}
       className={`text-white font-montserrat py-2 px-4 rounded-lg shadow-lg ${
         disabled ? "" : "hover:opacity-90"
-      } transition-opacity duration-300 ${
+      } transition-opacity duration-300 text-white font-semibold ${
         disabled
           ? "bg-secondary"
-          : buttonType === "primaryButton"
-          ? "bg-primary"
-          : "bg-highlight"
+          : buttonColor()
       } ${disabled ? "cursor-default" : ""} ${className}`}
       disabled={disabled}
       aria-label={ariaLabel}
