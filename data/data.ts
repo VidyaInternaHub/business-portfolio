@@ -1,4 +1,5 @@
 import { FaFacebook, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
+import Image from "next/image";
 export const navbarLinks = [
   {
     name: "Services",
@@ -74,3 +75,24 @@ export const footerServices = [
 //   { icon: <FaLinkedin />, label: "LinkedIn" },
 //   { icon: <FaYoutube />, label: "YouTube" },
 // ];
+
+export const servicecardData = [
+  {
+    image: "/images/web.svg",
+    title: "Web development",
+    description:
+      "User-friendly web portals,platforms,SaaS application and software products leveraging edge technologies",
+  },
+  {
+    image: "/images/mobile.svg",
+    title: "Mobility",
+    description:
+      "Native and hybrid applications with compelling UX after extensive user research,design modelling across platforms ",
+  },
+  {
+    image: "/images/uiux.svg",
+    title: "UI/UX Design",
+    description:
+      "Crafting an intuitive and engaging user experience, blending aesthetics & functionality.",
+  },
+];

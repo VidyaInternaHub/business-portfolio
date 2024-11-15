@@ -14,7 +14,7 @@ export default {
         accent: "#66CCFF", // Sky Blue (Clean, Approachable, and Fresh)
         background: "#F7F8FA", // Off-White (Light and Minimal)
         highlight: "#FF6F3C", // Orange (Adds a subtle call to action)
-        bgFooter: "#1f2937",
+        bgFooter: "#1f2937", // blue
       },
       backgroundImage: {
         // Blue to Sky Blue
