@@ -38,6 +38,10 @@ body {
   @apply font-inter bg-background;
 }
 
+.active-link {
+  @apply text-accent;
+}
+
 .swiper-pagination {
   @apply mt-2 !important;
 }

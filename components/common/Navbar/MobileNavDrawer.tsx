@@ -25,6 +25,7 @@ export default function MobileNavDrawer() {
           {navbarLinks.map((link) => (
             <li key={link.url}>
               <Link
+                onClick={mobileNavDrawer.close}
                 href={link.url}
                 className="w-full px-6 py-4 block text-lg font-medium hover:bg-gray-50 transition-colors duration-300 border-y border-gray-200"
               >
@@ -35,7 +36,7 @@ export default function MobileNavDrawer() {
         </ul>
         <div className="w-full sm:w-2/3 p-6 block md:hidden">
           <PrimaryButton
-          buttonType="highlightButton"
+            buttonType="highlightButton"
             href="#"
             className="w-full py-4 text-center text-lg font-medium"
             ariaLabel="Book a Consultation"

@@ -1,7 +1,7 @@
 "use client";
 
-import Button from "../common/Button";
-import Input from "../common/Input";
+import Button from "../../common/Button";
+import Input from "../../common/Input";
 
 export default function Form() {
   const onSubmit = () => {};
@@ -11,7 +11,7 @@ export default function Form() {
       <div className="flex flex-col py-8">
         <Input label="Full Name" placeholder="eg: John Doe" />
         <Input label="Email" type="email" placeholder="eg: johndoe@email.com" />
-        <Input label="Phone no." type="number" placeholder="eg: 99999 99999" />
+        <Input label="Phone no." type="tel" placeholder="eg: 99999 99999" />
         <div className="mb-6">
           <label className="block font-medium text-gray-900">
             About your project

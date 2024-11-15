@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { projectsData } from "@/data/data";
-import Card from "../common/Card";
+import Card from "../../common/Card";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Projects() {
