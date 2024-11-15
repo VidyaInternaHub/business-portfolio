@@ -28,16 +28,8 @@ export const navbarLinks = [
     url: "/techstack",
   },
   {
-    name: "About",
+    name: "About Us",
     url: "/about",
-  },
-  {
-    name: "Contact",
-    url: "/contact",
-  },
-  {
-    name: "Blogs",
-    url: "/blogs",
   },
 ];
 
