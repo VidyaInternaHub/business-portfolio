@@ -41,7 +41,7 @@ export default function RootLayout({
       className={`${poppins.variable} ${roboto.variable} ${montserrat.variable}`}
     >
       <body>
-        <div className="sticky top-0">
+        <div className="sticky top-0 z-50">
           <Navbar />
           <MobileNavDrawer />
         </div>
