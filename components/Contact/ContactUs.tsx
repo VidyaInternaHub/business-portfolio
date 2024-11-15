@@ -31,7 +31,7 @@ export default function ContactUs() {
             </div>
           </div>
           <div className="lg:basis-5/12">
-            <Card className="px-4 py-8 shadow-2xl bg-primary/10">
+            <Card className="px-5 py-6 shadow-2xl bg-primary/10">
               <span className="pl-5 block text-xl text-center font-semibold uppercase">
                 Your Success Story Starts Here
               </span>

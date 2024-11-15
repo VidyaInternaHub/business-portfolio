@@ -55,7 +55,7 @@ export default function TechStack() {
                     </h2>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                       {technologies.map((tech, index) => (
-                        <Card key={index} className="shadow-lg bg-opacity-5">
+                        <Card key={index} className="px-8 py-5 bg-accent shadow-lg bg-opacity-5">
                           <tech.icon className="w-16 h-16 md:w-20 md:h-20 text-primary" />
                           <h3 className="mt-4 text-xl font-semibold text-gray-800">
                             {tech.name}

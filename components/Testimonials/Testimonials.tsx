@@ -46,7 +46,7 @@ const Testimonials = () => {
                 key={item.id}
                 className="flex justify-center w-full my-4 md:my-8 px-6"
               >
-                <Card className="shadow-lg h-[34rem] lg:h-[38rem] xl:h-[34rem]">
+                <Card className="px-8 py-5 bg-accent bg-opacity-15 shadow-lg h-[34rem] lg:h-[38rem] xl:h-[34rem]">
                   <div className="flex items-center space-x-3 mb-4">
                     <Image
                       src={item.logo}
