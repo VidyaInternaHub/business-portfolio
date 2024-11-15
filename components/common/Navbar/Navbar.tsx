@@ -37,7 +37,7 @@ export default function Navbar() {
 
       {/* White background layer with opacity transition */}
       <div
-        className={`absolute inset-0 bg-white transition-opacity duration-300 ease-in-out ${
+        className={`absolute inset-0 bg-background transition-opacity duration-300 ease-in-out ${
           scrolled ? "opacity-100 shadow-md" : "opacity-0"
         }`}
       />

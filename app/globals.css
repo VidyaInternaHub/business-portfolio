@@ -23,4 +23,21 @@
   ::-webkit-scrollbar-corner {
     @apply bg-gray-100; /* Styling for the corner in case of both horizontal and vertical scroll */
   }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+}
+
+body {
+  @apply font-inter bg-background;
+}
+
+.swiper-pagination {
+  @apply mt-2 !important;
 }
