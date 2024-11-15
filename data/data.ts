@@ -186,6 +186,29 @@ export const testimonialsData = [
   },
 ];
 
+export const faqData = [
+  {
+    question: "What services do you offer?",
+    answer: "We offer comprehensive digital solutions including web development, mobile app development, UI/UX design, and cloud infrastructure services. Our team specializes in creating custom solutions tailored to your business needs."
+  },
+  {
+    question: "How long does it typically take to complete a project?",
+    answer: "Project timelines vary depending on scope and complexity. A typical web development project takes 8-12 weeks, while larger enterprise solutions may take 3-6 months. We'll provide a detailed timeline during our initial consultation."
+  },
+  {
+    question: "Do you provide ongoing support after project completion?",
+    answer: "Yes, we offer comprehensive post-launch support and maintenance packages. Our team provides 24/7 technical support, regular updates, and continuous monitoring to ensure your digital solutions remain optimal."
+  },
+  {
+    question: "What technologies do you specialize in?",
+    answer: "We specialize in modern web technologies including React, Next.js, Node.js, and cloud platforms like AWS. We stay current with industry trends to deliver cutting-edge solutions that scale."
+  },
+  {
+    question: "How do you handle project communication?",
+    answer: "We maintain transparent communication through regular updates, scheduled check-ins, and a dedicated project manager. We use collaborative tools to ensure you're always informed about your project's progress."
+  }
+];
+
 export const footerquickLinks = [
   {
     name: "About Us",
