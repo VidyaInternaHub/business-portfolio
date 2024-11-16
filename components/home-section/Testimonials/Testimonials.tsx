@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { testimonialsData } from "@/data/data";
-import Card from "../common/Card";
+import Card from "../../common/Card";
 
 const Testimonials = () => {
   return (

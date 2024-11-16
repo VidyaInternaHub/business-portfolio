@@ -57,7 +57,7 @@ export default function Button({
     <button
       type={type}
       onClick={disabled ? undefined : handleClick}
-      className={`text-white font-montserrat py-2 px-4 rounded-lg shadow-lg ${
+      className={`text-white font-montserrat py-2 px-4 rounded-full shadow-lg ${
         disabled ? "" : "hover:opacity-90"
       } transition-opacity duration-300 text-white font-semibold ${
         disabled
