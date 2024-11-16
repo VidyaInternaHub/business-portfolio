@@ -17,7 +17,15 @@ export const navbarLinks = [
     url: "/contact",
   },
 ];
-
+export interface TestimonialItem {
+  id: number;
+  title: string;
+  content: string;
+  userImage: string;
+  logo: string;
+  name: string;
+  role: string;
+}
 export const testimonialsData = [
   {
     id: 1,
