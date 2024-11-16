@@ -35,7 +35,7 @@ export default function RootLayout({
       lang="en"
       className={`${poppins.variable} ${roboto.variable} ${montserrat.variable}`}
     >
-      <body>
+      <body suppressHydrationWarning>
         <div className="sticky top-0">
           <Navbar />
           <MobileNavDrawer />
