@@ -1,16 +1,19 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { projectsData } from "@/data/data";
 import Card from "../common/Card";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Projects() {
+
   return (
     <section className="max-w-[1190px] m-auto px-4 py-12 font-poppins  md:px-12">
       <div className="text-primaryDark">
         <h1 className="text-4xl text-center font-semibold md:text-6xl md:text-left">Our Projects</h1>
         <div className="mt-8 grid grid-cols-1 gap-12 lg:mt-12">
           {projectsData.map((project, index) => (
+            <Link href={`/projects/${project.title}`}>
             <Card
               key={index}
               className="group flex flex-col justify-between bg-background border-slate-400 cursor-pointer overflow-hidden lg:flex-row"
@@ -49,6 +52,7 @@ export default function Projects() {
                 </div>
               </div>
             </Card>
+            </Link>
           ))}
         </div>
       </div>
