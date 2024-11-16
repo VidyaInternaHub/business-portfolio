@@ -1,3 +1,4 @@
+import AboutUs from "@/components/home-section/AboutUs/AboutUs"
 import Hero from "@/components/home-section/Hero/Hero";
 import Projects from "@/components/home-section/Projects/Projects";
 import CaseStudy from "@/components/CaseStudy/CaseStudy";
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <Hero />
       <Projects />
+      <AboutUs/>
       <CaseStudy />
       <Testimonials />
       <FAQs />

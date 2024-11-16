@@ -6,7 +6,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Projects() {
   return (
-    <section className="max-w-[1190px] m-auto px-4 py-12 font-poppins  md:px-12">
+    <section className="px-4 py-4 md:px-20 md:py-10 lg:px-10 xl:px-20">
       <div className="text-primaryDark">
           <h3 className="text-4xl text-center font-semibold md:text-6xl md:text-left">
             Our Projects

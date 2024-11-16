@@ -1,11 +1,10 @@
 import Card from "../../common/Card";
-import SocialMedia from "../../common/SocialMedia";
 import Form from "./Form";
 
 export default function ContactUs() {
   return (
-    <section className="my-10">
-      <div className="max-w-[1290px] m-auto px-4 py-12 font-poppins md:px-12">
+    <section className="px-4 py-4 md:px-20 md:py-10 lg:px-10 xl:px-20">
+      <div className="m-auto py-12 font-poppins">
         <div className="flex flex-col py-5 gap-12 lg:flex-row lg:justify-between">
           <div className="lg:basis-1/2">
             <span className="py-4 block font-semibold text-5xl sm:text-6xl xl:text-7xl">

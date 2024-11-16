@@ -36,12 +36,17 @@ export default function MobileNavDrawer() {
           ))}
         </ul>
         <div className="w-full sm:w-2/3 p-6 block md:hidden">
-        <Button
+          <Button
             buttonType="highlightButton"
-            className="w-full px-8 py-3 rounded-full justify-center items-center space-x-2 flex md:hidden"
+            className="w-full px-8 py-3 rounded-full block md:hidden"
           >
-            <FaPhone className="rotate-90" />
-            <p>Call Us</p>
+            <a
+              href="tel:+919516871900"
+              className="flex justify-center items-center space-x-2"
+            >
+              <FaPhone className="rotate-90" />
+              <p>Call Us</p>
+            </a>
           </Button>
         </div>
       </div>

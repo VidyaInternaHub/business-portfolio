@@ -54,7 +54,15 @@ export const techStackData = {
     { icon: FaGitAlt, name: "Git" },
   ],
 };
-
+export interface TestimonialItem {
+  id: number;
+  title: string;
+  content: string;
+  userImage: string;
+  logo: string;
+  name: string;
+  role: string;
+}
 export const testimonialsData = [
   {
     id: 1,
@@ -209,7 +217,7 @@ export const faqData = [
 export const footerquickLinks = [
   {
     name: "About Us",
-    url: "/aboutus",
+    url: "/about",
   },
   {
     name: "Careers",

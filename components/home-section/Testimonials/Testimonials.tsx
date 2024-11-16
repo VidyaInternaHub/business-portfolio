@@ -14,8 +14,8 @@ import Card from "../../common/Card";
 
 const Testimonials = () => {
   return (
-    <section className="">
-      <div className="flex flex-col px-4 py-8">
+    <section className="px-4 py-4 md:px-20 md:py-10 lg:px-10 xl:px-20">
+      <div className="flex flex-col">
         <h1 className="font-bold mx-auto px-8 sm:px-16 my-5 md:mt-6 text-3xl md:text-4xl text-center">
           What Our Clients Say
         </h1>

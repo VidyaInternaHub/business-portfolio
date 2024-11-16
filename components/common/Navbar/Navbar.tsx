@@ -83,10 +83,15 @@ export default function Navbar() {
         <div className="flex space-x-6">
           <Button
             buttonType="highlightButton"
-            className="px-8 py-3 rounded-full justify-center items-center space-x-2 hidden md:flex"
+            className="px-8 py-3 rounded-ful hidden md:block"
           >
-            <FaPhone className="rotate-90" />
-            <p>Call Us</p>
+            <a
+              href="tel:+919516871900"
+              className="flex justify-center items-center space-x-2"
+            >
+              <FaPhone className="rotate-90" />
+              <p>Call Us</p>
+            </a>
           </Button>
           {/* Mobile Menu Button */}
           <button
