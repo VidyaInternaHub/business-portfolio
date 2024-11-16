@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useMobileNavDrawer } from "@/hooks/useMobileNavDrawer";
 import { navbarLinks } from "@/data/data";
-import PrimaryButton from "../Button";
+import Button from "../Button";
+import { FaPhone } from "react-icons/fa";
 
 export default function MobileNavDrawer() {
   const mobileNavDrawer = useMobileNavDrawer();
@@ -35,14 +36,13 @@ export default function MobileNavDrawer() {
           ))}
         </ul>
         <div className="w-full sm:w-2/3 p-6 block md:hidden">
-          <PrimaryButton
+        <Button
             buttonType="highlightButton"
-            href="#"
-            className="w-full py-4 text-center text-lg font-medium"
-            ariaLabel="Book a Consultation"
+            className="w-full px-8 py-3 rounded-full justify-center items-center space-x-2 flex md:hidden"
           >
-            Book a Consultation
-          </PrimaryButton>
+            <FaPhone className="rotate-90" />
+            <p>Call Us</p>
+          </Button>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaPhone } from "react-icons/fa";
 import { useMobileNavDrawer } from "@/hooks/useMobileNavDrawer";
 import { navbarLinks } from "@/data/data";
 import Logo from "../Logo";
@@ -83,11 +83,10 @@ export default function Navbar() {
         <div className="flex space-x-6">
           <Button
             buttonType="highlightButton"
-            href="#"
-            className="hidden md:block"
-            ariaLabel="Book a Consultation"
+            className="px-8 py-3 rounded-full justify-center items-center space-x-2 hidden md:flex"
           >
-            Book a Consultation
+            <FaPhone className="rotate-90" />
+            <p>Call Us</p>
           </Button>
           {/* Mobile Menu Button */}
           <button

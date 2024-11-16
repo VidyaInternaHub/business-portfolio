@@ -1,15 +1,15 @@
 import HeroContainer from "@/components/common/HeroContainer";
-import Decoration from "./Decoration";
+// import Decoration from "./Decoration";
 
 export default function Hero() {
   return (
     <HeroContainer>
       <div className="lg:h-[calc(100vh-18rem)] flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="max-w-7xl mx-auto w-full">
+          <div className="grid md:grid-cols-1 items-center">
             {/* Left Content */}
             <div className="text-left">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-sky-lightgray-tertary bg-clip-text text-transparent">
+              <h1 className="py-4 text-4xl md:text-7xl font-bold mb-6 bg-gradient-sky-lightgray-tertary bg-clip-text text-transparent">
                 Powered by Modern Technology
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 max-w-xl mb-8">
@@ -28,9 +28,8 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-
-            {/* Right Decorative Tech Elements */}
-            <Decoration />
+            {/* Right Decorative Elements */}
+            {/* <Decoration /> */}
           </div>
         </div>
       </div>
