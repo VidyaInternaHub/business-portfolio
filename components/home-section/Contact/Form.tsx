@@ -3,15 +3,23 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+import {
+  validateName,
+  validateEmail,
+  validatePhone,
+  validateAbout,
+  validatePrivacyPolicy,
+} from "@/utils/validation";
+import { sendEmail } from "@/utils/emailController";
 import Button from "../../common/Button";
 import Input from "../../common/Input";
 
 export default function Form() {
   const [isLoading, setIsLoading] = useState(false);
-
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<FieldValues>({
     defaultValues: {
@@ -24,51 +32,26 @@ export default function Form() {
     mode: "onBlur",
   });
 
-  const validateName = (value: string) => {
-    if (!value) return "Name is required";
-    if (value.length < 2) return "Name must be at least 2 characters";
-    if (value.length > 50) return "Name must be less than 50 characters";
-    if (!/^[A-Za-z\s]+$/.test(value))
-      return "Name can only contain letters and spaces";
-    return true;
-  };
-
-  const validateEmail = (value: string) => {
-    if (!value) return "Email is required";
-    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-    if (!emailRegex.test(value)) return "Invalid email address";
-    return true;
-  };
-
-  const validatePhone = (value: string) => {
-    if (!value) return "Phone number is required";
-    const phoneRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/;
-    if (!phoneRegex.test(value))
-      return "Invalid phone number (10 digits required)";
-    return true;
-  };
-
-  const validateAbout = (value: string) => {
-    if (!value) return "Project description is required";
-    if (value.length < 200) return "Please write at least 200 characters";
-    if (value.length > 10000) return "Please keep it under 10000 characters";
-    return true;
-  };
-
-  const validatePrivacyPolicy = (value: boolean) => {
-    if (!value) return "You must accept the privacy policy";
-    return true;
-  };
-
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     try {
       setIsLoading(true);
 
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      await sendEmail({
+        fullName: data["full-name"],
+        email: data["email"],
+        phone: data["phone"],
+        about: data["about"],
+      });
 
-      toast.success("Form submitted successfully", { position: "bottom-left" });
+      toast.success(
+        "Thank you for showing interest in us. One of our HRs will reach you soon!",
+        { position: "bottom-left", duration: 5000 }
+      );
+
+      reset();
     } catch (error) {
-      toast.error("Failed to submit form", { position: "bottom-left" });
+      console.error(error);
+      toast.error("Failed to submit form" + error, { position: "bottom-left" });
     } finally {
       setIsLoading(false);
     }
@@ -116,7 +99,7 @@ export default function Form() {
           required
           label="Phone no."
           type="tel"
-          placeholder="eg: 99999 99999"
+          placeholder="eg:+19999999999"
         />
         <div className="mb-6">
           <label htmlFor="about" className="block font-medium text-gray-900">
