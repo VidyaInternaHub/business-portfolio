@@ -181,24 +181,29 @@ export const testimonialsData = [
 export const faqData = [
   {
     question: "What services do you offer?",
-    answer: "We offer comprehensive digital solutions including web development, mobile app development, UI/UX design, and cloud infrastructure services. Our team specializes in creating custom solutions tailored to your business needs."
+    answer:
+      "We offer comprehensive digital solutions including web development, mobile app development, UI/UX design, and cloud infrastructure services. Our team specializes in creating custom solutions tailored to your business needs.",
   },
   {
     question: "How long does it typically take to complete a project?",
-    answer: "Project timelines vary depending on scope and complexity. A typical web development project takes 8-12 weeks, while larger enterprise solutions may take 3-6 months. We'll provide a detailed timeline during our initial consultation."
+    answer:
+      "Project timelines vary depending on scope and complexity. A typical web development project takes 8-12 weeks, while larger enterprise solutions may take 3-6 months. We'll provide a detailed timeline during our initial consultation.",
   },
   {
     question: "Do you provide ongoing support after project completion?",
-    answer: "Yes, we offer comprehensive post-launch support and maintenance packages. Our team provides 24/7 technical support, regular updates, and continuous monitoring to ensure your digital solutions remain optimal."
+    answer:
+      "Yes, we offer comprehensive post-launch support and maintenance packages. Our team provides 24/7 technical support, regular updates, and continuous monitoring to ensure your digital solutions remain optimal.",
   },
   {
     question: "What technologies do you specialize in?",
-    answer: "We specialize in modern web technologies including React, Next.js, Node.js, and cloud platforms like AWS. We stay current with industry trends to deliver cutting-edge solutions that scale."
+    answer:
+      "We specialize in modern web technologies including React, Next.js, Node.js, and cloud platforms like AWS. We stay current with industry trends to deliver cutting-edge solutions that scale.",
   },
   {
     question: "How do you handle project communication?",
-    answer: "We maintain transparent communication through regular updates, scheduled check-ins, and a dedicated project manager. We use collaborative tools to ensure you're always informed about your project's progress."
-  }
+    answer:
+      "We maintain transparent communication through regular updates, scheduled check-ins, and a dedicated project manager. We use collaborative tools to ensure you're always informed about your project's progress.",
+  },
 ];
 
 export const footerquickLinks = [
@@ -251,7 +256,32 @@ export const footerServices = [
     url: "/design",
   },
 ];
-
+export const caseStudies = [
+  {
+    id: 1,
+    title: "Rebranding Global Tech",
+    description:
+      "A complete overhaul of a tech giant’s visual identity by rebranding its logo, website, and communication materials. This transformation led to enhanced brand recognition and a more cohesive brand presence across global markets, ultimately resulting in increased customer engagement and a refreshed market position.",
+    category: "Branding",
+    image: "/case-study-img-1.jpg",
+  },
+  {
+    id: 2,
+    title: "E-commerce Revolution",
+    description:
+      "Boosting online sales by 200% through UX improvements, including streamlined navigation, a more intuitive checkout process, and mobile optimization. This project helped enhance customer satisfaction, reduce cart abandonment rates, and significantly improve conversion rates, leading to a substantial increase in revenue for the e-commerce platform.",
+    category: "UX Design",
+    image: "/case-study-img-2.jpg",
+  },
+  {
+    id: 3,
+    title: "Startup Launch Success",
+    description:
+      "Crafting a marketing strategy that led to 1M users in just 6 months by leveraging targeted social media campaigns, influencer partnerships, and data-driven content creation. The strategy successfully attracted early adopters, increased brand awareness, and fueled the startup’s rapid growth, laying a solid foundation for its future expansion.",
+    category: "Marketing",
+    image: "/case-study-img-3.jpg",
+  },
+];
 // export const iconsData = [
 //   { icon: <FaFacebook />, label: "Facebook" },
 //   { icon: <FaTwitter />, label: "Twitter" },
@@ -263,22 +293,24 @@ export const projectsData = [
   {
     img: "project-1.png",
     title: "E-commerce Website Redesign",
-    description: "Revamped an online store to improve user experience and sales",
+    description:
+      "Revamped an online store to improve user experience and sales",
     url: "",
-    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"]
+    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"],
   },
   {
     img: "project-2.png",
     title: "Mobile App Development for Fitness Tracking",
-    description: "Created an intuitive fitness app for real-time progress tracking.",
+    description:
+      "Created an intuitive fitness app for real-time progress tracking.",
     url: "",
-    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"]
+    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"],
   },
   {
     img: "project-1.png",
     title: "Food Delivery App Design",
     description: "Created an intuitive mobile app for seamless food ordering.",
     url: "",
-    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"]
+    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"],
   },
-]
+];
