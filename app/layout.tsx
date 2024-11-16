@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Roboto, Montserrat, Inter } from "next/font/google";
 import Navbar from "@/components/common/Navbar/Navbar";
+import ToasterProvider from "@/components/common/ToasterProvider";
 import MobileNavDrawer from "@/components/common/Navbar/MobileNavDrawer";
 import Footer from "@/components/common/Footer/Footer";
 import "./globals.css";
@@ -45,6 +46,7 @@ export default function RootLayout({
           <Navbar />
           <MobileNavDrawer />
         </div>
+        <ToasterProvider />
         {children}
         <Footer />
       </body>
