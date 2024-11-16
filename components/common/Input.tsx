@@ -20,7 +20,7 @@ export default function Input({
         <input
           type={type}
           placeholder={placeholder}
-          className={`block w-full rounded-md border-0 py-2 pl-2 text-gray-900 bg-background shadow-sm ring-1 ring-inset ring-gray-400 outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 ${className}`}
+          className={`block w-full rounded-xl border-0 py-3 pl-2 text-gray-900 bg-background shadow-sm ring-1 ring-inset ring-gray-400 outline-none placeholder:text-gray-400 focus:ring-inset focus:ring-indigo-600 ${className}`}
         />
       </div>
     </div>
