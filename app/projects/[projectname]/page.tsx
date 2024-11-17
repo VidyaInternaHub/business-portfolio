@@ -3,6 +3,11 @@ export default async function Page({
 }: {
   params: Promise<{ projectname: string }>;
 }) {
-  const projectname = (await params).projectname;
-  return <div>My Post: {projectname}</div>;
+  const projectname = (await params).projectname.split("-").join(" ").toUpperCase();
+
+  return (
+    <>
+      
+    </>
+  )
 }
