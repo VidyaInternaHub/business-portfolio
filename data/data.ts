@@ -1,4 +1,10 @@
-import { FaReact, FaNodeJs, FaDocker, FaAws, FaGitAlt } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaDocker,
+  FaAws,
+  FaGitAlt,
+} from "react-icons/fa";
 import {
   SiNextdotjs,
   SiTypescript,
@@ -54,15 +60,7 @@ export const techStackData = {
     { icon: FaGitAlt, name: "Git" },
   ],
 };
-export interface TestimonialItem {
-  id: number;
-  title: string;
-  content: string;
-  userImage: string;
-  logo: string;
-  name: string;
-  role: string;
-}
+
 export const testimonialsData = [
   {
     id: 1,
@@ -214,56 +212,6 @@ export const faqData = [
   },
 ];
 
-export const footerquickLinks = [
-  {
-    name: "About Us",
-    url: "/about",
-  },
-  {
-    name: "Careers",
-    url: "/carrers",
-  },
-  {
-    name: "Contact Us",
-    url: "/contactus",
-  },
-  {
-    name: "Investor Relations",
-    url: "/investorrelation",
-  },
-];
-export const footerLegal = [
-  {
-    name: "Term Of Use",
-    url: "/termofuse",
-  },
-  {
-    name: "Privacy Policy",
-    url: "/privacypolicy",
-  },
-  {
-    name: "Cookie policy",
-    url: "/cookiepolicy",
-  },
-  {
-    name: "Accessibility",
-    url: "/accessibility",
-  },
-];
-export const footerServices = [
-  {
-    name: "Web Development",
-    url: "/webdevelopment",
-  },
-  {
-    name: "Mobile App Development",
-    url: "/mobileappdevelopmwnt",
-  },
-  {
-    name: "UI/UX Design",
-    url: "/design",
-  },
-];
 export const caseStudies = [
   {
     id: 1,
@@ -290,12 +238,6 @@ export const caseStudies = [
     image: "/case-study-img-3.jpg",
   },
 ];
-// export const iconsData = [
-//   { icon: <FaFacebook />, label: "Facebook" },
-//   { icon: <FaTwitter />, label: "Twitter" },
-//   { icon: <FaLinkedin />, label: "LinkedIn" },
-//   { icon: <FaYoutube />, label: "YouTube" },
-// ];
 
 export const projectsData = [
   {
@@ -322,3 +264,84 @@ export const projectsData = [
     techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"],
   },
 ];
+
+export const footerData = {
+  company: {
+    name: "VidyaInterna Hub",
+    description:
+      "Building digital excellence through innovative solutions and transformative experiences.",
+    socialLinks: [
+      {
+        name: "LinkedIn",
+        url: "https://linkedin.com",
+        icon: FaLinkedin,
+      },
+      {
+        name: "GitHub",
+        url: "https://github.com",
+        icon: FaGithub,
+      },
+    ],
+  },
+  quickLinks: [
+    {
+      name: "About Us",
+      url: "/about",
+    },
+    {
+      name: "Careers",
+      url: "/carrers",
+    },
+    {
+      name: "Contact Us",
+      url: "/contactus",
+    },
+    {
+      name: "Investor Relations",
+      url: "/investorrelation",
+    },
+  ],
+  legal: [
+    {
+      name: "Term Of Use",
+      url: "/termofuse",
+    },
+    {
+      name: "Privacy Policy",
+      url: "/privacypolicy",
+    },
+    // {
+    //   name: "Cookie policy",
+    //   url: "/cookiepolicy",
+    // },
+    // {
+    //   name: "Accessibility",
+    //   url: "/accessibility",
+    // },
+  ],
+  services: [
+    {
+      name: "Web Development",
+      url: "/webdevelopment",
+    },
+    {
+      name: "Mobile App Development",
+      url: "/mobileappdevelopmwnt",
+    },
+    {
+      name: "UI/UX Design",
+      url: "/design",
+    },
+  ],
+  contact: {
+    phone: "+91 951 687 1900",
+    email: "contact@vidyainterna.com",
+    address: {
+      street: "MP Nagar, Zone 1",
+      city: "Bhopal",
+      state: "Madhya Pradesh",
+      country: "India",
+      pincode: "462011",
+    },
+  },
+};

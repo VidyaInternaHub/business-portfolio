@@ -5,8 +5,10 @@ import { useMobileNavDrawer } from "@/hooks/useMobileNavDrawer";
 import { navbarLinks } from "@/data/data";
 import Button from "../Button";
 import { FaPhone } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 export default function MobileNavDrawer() {
+  const pathname = usePathname();
   const mobileNavDrawer = useMobileNavDrawer();
 
   return (
@@ -28,7 +30,9 @@ export default function MobileNavDrawer() {
               <Link
                 onClick={mobileNavDrawer.close}
                 href={link.url}
-                className="w-full px-6 py-4 block text-lg font-medium hover:bg-gray-50 transition-colors duration-300 border-y border-gray-200"
+                className={`w-full px-6 py-4 block text-lg font-medium hover:bg-gray-50 transition-colors duration-300 border-y border-gray-200 ${
+                  pathname === link.url ? "active-link" : ""
+                }`}
               >
                 {link.name}
               </Link>

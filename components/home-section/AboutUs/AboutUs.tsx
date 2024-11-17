@@ -17,7 +17,7 @@ const AboutUs = () => {
           </h2>
           <Button
             href="/about"
-            className="rounded-full flex items-center justify-center bg-opacity-70"
+            className="rounded-full self-center flex items-center justify-center bg-opacity-70 text-xs sm:text-base"
           >
             View More
             <FaLongArrowAltRight className="ml-2" />

@@ -31,7 +31,7 @@ export default function CaseStudy() {
   }, [emblaApi, autoScroll, onSelect]);
 
   return (
-    <section className="py-4 sm:py-12 md:py-20 px-3 sm:px-12 md:px-20 min-h-screen">
+    <section className="py-4 sm:py-12 md:py-20 px-3 sm:px-12 md:px-20">
       <div className="container mx-auto px-4 md:px-12">
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-8 md:mb-12 text-center">
           Case Studies

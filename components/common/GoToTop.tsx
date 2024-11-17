@@ -32,7 +32,7 @@ const GoToTop = () => {
     <>
       {isVisible && (
         <button
-          className="fixed bottom-8 right-8 p-3 rounded-full bg-primary text-white shadow-lg hover:scale-110 transition-all duration-300 z-50"
+          className="fixed bottom-8 right-8 p-3 rounded-full bg-primary bg-opacity-60 text-white shadow-lg hover:scale-110 transition-all duration-300 z-50"
           onClick={scrollToTop}
           aria-label="Go to top"
         >
