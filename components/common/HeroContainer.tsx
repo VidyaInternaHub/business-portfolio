@@ -1,3 +1,7 @@
+"use client";
+
+import { ReactTyped } from "react-typed";
+
 interface HeroContainerProps {
   heading: string;
   description: string;
@@ -23,7 +27,13 @@ export default function HeroContainer({
             {/* Left Content */}
             <div className="text-left">
               <h1 className="py-4 text-4xl md:text-7xl font-bold mb-6 bg-gradient-sky-lightgray-tertary bg-clip-text text-transparent">
-                {heading}
+                <ReactTyped
+                  strings={[heading]}
+                  typeSpeed={60}
+                  showCursor={true}
+                  backSpeed={-1}
+                  loop={false}
+                />
               </h1>
               <p className="text-xl md:text-2xl text-gray-200 max-w-xl mb-8">
                 {description}
