@@ -3,9 +3,12 @@
 import Link from "next/link";
 import { useMobileNavDrawer } from "@/hooks/useMobileNavDrawer";
 import { navbarLinks } from "@/data/data";
-import PrimaryButton from "../Button";
+import Button from "../Button";
+import { FaPhone } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 export default function MobileNavDrawer() {
+  const pathname = usePathname();
   const mobileNavDrawer = useMobileNavDrawer();
 
   return (
@@ -25,8 +28,11 @@ export default function MobileNavDrawer() {
           {navbarLinks.map((link) => (
             <li key={link.url}>
               <Link
+                onClick={mobileNavDrawer.close}
                 href={link.url}
-                className="w-full px-6 py-4 block text-lg font-medium hover:bg-gray-50 transition-colors duration-300 border-y border-gray-200"
+                className={`w-full px-6 py-4 block text-lg font-medium hover:bg-gray-50 transition-colors duration-300 border-y border-gray-200 ${
+                  pathname === link.url ? "active-link" : ""
+                }`}
               >
                 {link.name}
               </Link>
@@ -34,14 +40,18 @@ export default function MobileNavDrawer() {
           ))}
         </ul>
         <div className="w-full sm:w-2/3 p-6 block md:hidden">
-          <PrimaryButton
-          buttonType="highlightButton"
-            href="#"
-            className="w-full py-4 text-center text-lg font-medium"
-            ariaLabel="Book a Consultation"
+          <Button
+            buttonType="highlightButton"
+            className="w-full px-8 py-3 rounded-full block md:hidden"
           >
-            Book a Consultation
-          </PrimaryButton>
+            <a
+              href="tel:+919516871900"
+              className="flex justify-center items-center space-x-2"
+            >
+              <FaPhone className="rotate-90" />
+              <p>Call Us</p>
+            </a>
+          </Button>
         </div>
       </div>
     </div>

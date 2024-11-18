@@ -1,14 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaPhone } from "react-icons/fa";
 import { useMobileNavDrawer } from "@/hooks/useMobileNavDrawer";
 import { navbarLinks } from "@/data/data";
 import Logo from "../Logo";
 import Button from "../Button";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const mobileNavDrawer = useMobileNavDrawer();
   const [scrolled, setScrolled] = useState(false);
 
@@ -37,7 +39,7 @@ export default function Navbar() {
 
       {/* White background layer with opacity transition */}
       <div
-        className={`absolute inset-0 bg-white transition-opacity duration-300 ease-in-out ${
+        className={`absolute inset-0 bg-background transition-opacity duration-300 ease-in-out ${
           scrolled ? "opacity-100 shadow-md" : "opacity-0"
         }`}
       />
@@ -68,7 +70,9 @@ export default function Navbar() {
             <li key={link.url}>
               <Link
                 href={link.url}
-                className="font-semibold tracking-wider hover:text-accent transition-colors duration-300"
+                className={`font-semibold tracking-wider hover:text-accent transition-colors duration-300 ${
+                  pathname === link.url ? "active-link" : ""
+                }`}
               >
                 {link.name}
               </Link>
@@ -79,11 +83,15 @@ export default function Navbar() {
         <div className="flex space-x-6">
           <Button
             buttonType="highlightButton"
-            href="#"
-            className="hidden md:block"
-            ariaLabel="Book a Consultation"
+            className="px-8 py-3 rounded-ful hidden md:block"
           >
-            Book a Consultation
+            <a
+              href="tel:+919516871900"
+              className="flex justify-center items-center space-x-2"
+            >
+              <FaPhone className="rotate-90" />
+              <p>Call Us</p>
+            </a>
           </Button>
           {/* Mobile Menu Button */}
           <button
