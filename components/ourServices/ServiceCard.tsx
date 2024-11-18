@@ -8,6 +8,8 @@ const ServiceCard = ({ image, title, description }) => {
           className="  ml-6 mt-3  "
           src={image}
           alt={title}
+          height={75}
+          width={75}
           objectFit="cover"
         />
       </div>
