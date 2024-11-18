@@ -11,21 +11,9 @@ const AboutUs = () => {
     <section className="py-4 my-8 lg:my-12  mx-4 md:mx-8 lg:mx-12">
       <div className="flex flex-col gap-8 ">
         {/* Title and Button Section */}
-        <div className="flex sm:flex-row justify-between items-start sm:items-center mx-4 md:mx-6 lg:mx-8">
-          <h2 className="lg-px-6 text-3xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-0 text-black  ">
-            About Us
-          </h2>
-          <Button
-            href="/about"
-            className="rounded-full self-center flex items-center justify-center bg-opacity-70 text-xs sm:text-base"
-          >
-            View More
-            <FaLongArrowAltRight className="ml-2" />
-          </Button>
-        </div>
-
+        <h3 className="text-4xl text-center font-bold md:text-6xl">About Us</h3>
         {/* Description */}
-        <p className="text-black text-justify mx-4 md:mx-6 lg:mx-8 text-lg md:text-xl lg:text-2xl leading-relaxed">
+        <p className="text-center text-secondary mx-4 md:mx-6 lg:mx-8 text-lg md:text-xl lg:text-2xl leading-relaxed">
           At VidyaInterna Hub, we are dedicated to revolutionizing the education
           and training landscape. As a leading player in the Education &
           Training Services sector, we provide innovative and impactful learning

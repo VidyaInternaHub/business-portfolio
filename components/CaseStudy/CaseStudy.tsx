@@ -53,7 +53,7 @@ export default function CaseStudy() {
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <Card className="shadow-lg">
+                  <Card className="shadow-lg h-80">
                     <CardContent className="p-0">
                       <div className="flex flex-col md:flex-row">
                         
@@ -78,12 +78,12 @@ export default function CaseStudy() {
                           <p className="text-sm md:text-base text-gray-600 mb-4 md:mb-6">
                             {study.description}
                           </p>
-                          <Button
+                          {/* <Button
                             variant="outline"
                             className="py-2 px-4 h-auto font-semibold bg-blue-200 hover:bg-blue-400 flex items-center"
                           >
                             Read More <ArrowRight className="ml-2 h-4 w-4" />
-                          </Button>
+                          </Button> */}
                         </div>
                       </div>
                     </CardContent>

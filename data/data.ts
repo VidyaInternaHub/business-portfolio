@@ -14,6 +14,9 @@ import {
   SiPostgresql,
   SiNodedotjs,
   SiReact,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
 } from "react-icons/si";
 
 export const navbarLinks = [
@@ -21,10 +24,10 @@ export const navbarLinks = [
     name: "Home",
     url: "/",
   },
-  {
-    name: "Services",
-    url: "/services",
-  },
+  // {
+  //   name: "Services",
+  //   url: "/services",
+  // },
   {
     name: "Projects",
     url: "/projects",
@@ -40,7 +43,12 @@ export const navbarLinks = [
 ];
 
 export const techStackData = {
-  language: [{ icon: SiTypescript, name: "TypeScript" }],
+  language: [
+    { icon: SiTypescript, name: "TypeScript" },
+    { icon: SiJavascript, name: "JavaScript" },
+    { icon: SiHtml5, name: "HTML5" },
+    { icon: SiCss3, name: "CSS3" },
+  ],
   frontend: [
     { icon: SiReact, name: "React" },
     { icon: SiNextdotjs, name: "Next.js" },
@@ -188,7 +196,7 @@ export const faqData = [
   {
     question: "What services do you offer?",
     answer:
-      "We offer comprehensive digital solutions including web development, mobile app development, UI/UX design, and cloud infrastructure services. Our team specializes in creating custom solutions tailored to your business needs.",
+      "We offer comprehensive digital solutions including web development, mobile app development and UI/UX design. Our team specializes in creating custom solutions tailored to your business needs.",
   },
   {
     question: "How long does it typically take to complete a project?",
@@ -203,7 +211,7 @@ export const faqData = [
   {
     question: "What technologies do you specialize in?",
     answer:
-      "We specialize in modern web technologies including React, Next.js, Node.js, and cloud platforms like AWS. We stay current with industry trends to deliver cutting-edge solutions that scale.",
+      "We specialize in modern web technologies including React, Next.js, Node.js. We stay current with industry trends to deliver cutting-edge solutions that scale.",
   },
   {
     question: "How do you handle project communication?",
@@ -217,7 +225,7 @@ export const caseStudies = [
     id: 1,
     title: "Rebranding Global Tech",
     description:
-      "A complete overhaul of a tech giant’s visual identity by rebranding its logo, website, and communication materials. This transformation led to enhanced brand recognition and a more cohesive brand presence across global markets, ultimately resulting in increased customer engagement and a refreshed market position.",
+      "A complete overhaul of a tech giant’s visual identity by rebranding its logo, website, and communication materials. This transformation led to enhanced brand recognition and a more cohesive brand presence across global markets, ultimately resulting in increased customer engagement and a refreshed market position. This project demonstrated the power of user-centric design in driving business growth and customer satisfaction.",
     category: "Branding",
     image: "/case-study-img-1.jpg",
   },
@@ -330,7 +338,7 @@ export const footerData = {
     },
     {
       name: "Careers",
-      url: "/carrers",
+      url: "/careers",
     },
     {
       name: "Contact Us",
@@ -343,8 +351,8 @@ export const footerData = {
   ],
   legal: [
     {
-      name: "Term Of Use",
-      url: "/termofuse",
+      name: "Terms Of Use",
+      url: "/termsofuse",
     },
     {
       name: "Privacy Policy",

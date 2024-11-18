@@ -78,7 +78,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <FaPhone className="text-accent" />
+                <FaPhone className="text-accent rotate-90" />
                 <a
                   href={`tel:${contact.phone}`}
                   className="text-gray-400 hover:text-accent transition-colors"
