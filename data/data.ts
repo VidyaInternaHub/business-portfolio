@@ -241,6 +241,7 @@ export const caseStudies = [
 
 export const projectsData = [
   {
+    id: 0,
     img: "project-1.png",
     title: "E-commerce Website Redesign",
     description:
@@ -249,6 +250,7 @@ export const projectsData = [
     techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"],
   },
   {
+    id: 1,
     img: "project-2.png",
     title: "Mobile App Development for Fitness Tracking",
     description:
@@ -257,6 +259,7 @@ export const projectsData = [
     techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"],
   },
   {
+    id: 2,
     img: "project-1.png",
     title: "Food Delivery App Design",
     description: "Created an intuitive mobile app for seamless food ordering.",
