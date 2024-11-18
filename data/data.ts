@@ -265,6 +265,43 @@ export const projectsData = [
   },
 ];
 
+export const aboutUsPageData = {
+  data: [
+    {
+      title: "Transparency",
+      description:
+        "At VidyaInterna Hub, we prioritize honesty and open communication, fostering trust with clients, partners, and employees. Transparency ensures everyone is aligned and engaged in creating exceptional products.",
+    },
+    {
+      title: "Innovation",
+      description:
+        "We embrace cutting-edge technologies and forward-thinking approaches to stay ahead. Our commitment to innovation drives continuous improvement and empowers us to deliver groundbreaking solutions.",
+    },
+    {
+      title: "Collaboration",
+      description:
+        "Teamwork is at the core of our success. By uniting diverse talents and perspectives, we create innovative solutions and achieve remarkable results for our clients.",
+    },
+    {
+      title: "Excellence",
+      description:
+        "Delivering high-quality products and services is our priority. We focus on exceeding expectations through precision, dedication, and an unwavering commitment to excellence.",
+    },
+    {
+      title: "Customer Focus",
+      description:
+        "Our customers are at the heart of everything we do. We are committed to understanding their needs and delivering solutions that add real value to their lives and businesses.",
+    },
+    {
+      title: "Sustainability",
+      description:
+        "We are dedicated to making a positive impact on the environment and society. Our efforts are focused on sustainable practices that align with our values and contribute to a better future.",
+    },
+  ],
+  words:
+    "At VidyaInterna Hub, we are dedicated to revolutionizing the education and training landscape. As a leading player in the Education & Training Services sector, we provide innovative and impactful learning experiences designed to prepare the next generation of professionals for success. Join us in shaping the future of education and training, and be a part of a team that is passionate about nurturing talent and driving innovation.",
+};
+
 export const footerData = {
   company: {
     name: "VidyaInterna Hub",
