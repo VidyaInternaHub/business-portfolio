@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card";
 export default function Services() {
   return (
-    <section className="bg-[#f8f8f8]">
+    <section className="px-4 py-4 md:px-20 md:py-10 lg:px-10 xl:px-20">
       <div className="container mx-auto p-4 ">
         <div className="pt-8">
           <div className="text-center ">
