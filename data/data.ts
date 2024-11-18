@@ -1,3 +1,4 @@
+import { image } from "framer-motion/client";
 import {
   FaGithub,
   FaLinkedin,
@@ -5,7 +6,6 @@ import {
   FaAws,
   FaGitAlt,
 } from "react-icons/fa";
-import Image from "next/image";
 import {
   SiNextdotjs,
   SiTypescript,
@@ -192,7 +192,6 @@ export const testimonialsData = [
     role: "Ph.D, AVP, Artificial Intelligence, Baptist Health",
   },
 ];
-
 export const faqData = [
   {
     question: "What services do you offer?",
@@ -220,7 +219,6 @@ export const faqData = [
       "We maintain transparent communication through regular updates, scheduled check-ins, and a dedicated project manager. We use collaborative tools to ensure you're always informed about your project's progress.",
   },
 ];
-
 export const caseStudies = [
   {
     id: 1,
@@ -247,7 +245,6 @@ export const caseStudies = [
     image: "/case-study-img-3.jpg",
   },
 ];
-
 export const projectsData = [
   {
     id: 0,
@@ -276,7 +273,6 @@ export const projectsData = [
     techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"],
   },
 ];
-
 export const aboutUsPageData = {
   data: [
     {
@@ -313,7 +309,6 @@ export const aboutUsPageData = {
   words:
     "At VidyaInterna Hub, we are dedicated to revolutionizing the education and training landscape. As a leading player in the Education & Training Services sector, we provide innovative and impactful learning experiences designed to prepare the next generation of professionals for success. Join us in shaping the future of education and training, and be a part of a team that is passionate about nurturing talent and driving innovation.",
 };
-
 export const footerData = {
   company: {
     name: "VidyaInterna Hub",
@@ -394,3 +389,24 @@ export const footerData = {
     },
   },
 };
+
+export const servicecardData = [
+  {
+    image: "/icons/web.svg",
+    title: "Web Development",
+    description:
+      "User-Friendly webplatforms,SaaS application and software products leveraging edge technologies",
+  },
+  {
+    image: "/icons/mobile.svg",
+    title: "Mobility",
+    description:
+      "Native and Hybrid applications with compelling UX after extensive user research,design modeliing across platforms",
+  },
+  {
+    image: "icons/uiux.svg",
+    title: "UI/UX Design",
+    description:
+      "Crafting an intuitive and engaging user experience,blending aesthetics & functionality",
+  },
+];
