@@ -259,29 +259,42 @@ export const footerServices = [
 //   { icon: <FaYoutube />, label: "YouTube" },
 // ];
 
-export const projectsData = [
-  {
-    id: 0,
-    img: "project-1.png",
-    title: "E-commerce Website Redesign",
-    description: "Revamped an online store to improve user experience and sales",
-    url: "",
-    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"],
-  },
+export const projects = [
   {
     id: 1,
-    img: "project-2.png",
-    title: "Mobile App Development for Fitness Tracking",
-    description: "Created an intuitive fitness app for real-time progress tracking.",
-    url: "",
-    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"]
+    title: "Personal Portfolio",
+    description: "A personal portfolio website to showcase my skills and projects.",
+    img: "project-1.png",
+    techstack: ["Next.js", "Tailwind CSS", "TypeScript", "Zustand","MongoDB", "Express"]
   },
   {
     id: 2,
-    img: "project-1.png",
-    title: "Food Delivery App Design",
-    description: "Created an intuitive mobile app for seamless food ordering.",
-    url: "",
-    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"]
+    title: "E-commerce Website",
+    description: "An online shopping platform with product listings, a shopping cart, and payment gateway integration.",
+    img: "project-2.png",
+    techstack: ["React", "Node.js", "MongoDB", "Express", "Stripe API"]
   },
-]
+  {
+    id: 3,
+    title: "Employee Task & Project Management Dashboard",
+    description: "Dashboard to manage tasks, projects, deadlines, and team collaboration effectively.",
+    img: "project-3.png",
+    techstack: ["React", "Node.js", "MongoDB", "Express", "WebSocket", "Chart.js"]
+  },
+  {
+    id: 4,
+    title: "Blog Platform",
+    description: "A blogging platform where users can create, edit, and delete blog posts.",
+    img: "project-4.png",
+    techstack: ["Angular", "Node.js", "MongoDB", "Express"]
+  },
+  {
+    id: 5,
+    title: "Real-Time Chat Application",
+    description: "A real-time chat app with private messaging and group chat features.",
+    img: "project-5.png",
+    techstack: ["Socket.io", "Node.js", "Express", "MongoDB", "React"]
+  }
+];
+
+
