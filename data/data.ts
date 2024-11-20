@@ -25,10 +25,10 @@ export const navbarLinks = [
     name: "Home",
     url: "/",
   },
-  // {
-  //   name: "Services",
-  //   url: "/services",
-  // },
+  {
+    name: "Services",
+    url: "/ourservices",
+  },
   {
     name: "Projects",
     url: "/projects",
@@ -408,5 +408,73 @@ export const servicecardData = [
     title: "UI/UX Design",
     description:
       "Crafting an intuitive and engaging user experience,blending aesthetics & functionality",
+  },
+];
+export const servicecarddescriptionData = [
+  {
+    image: "/image/pic1.png",
+    title: "Experience Design",
+    description:
+      "Design-led engineering to provide a seamless experience to the users",
+  },
+  {
+    image: "/image/pic5.png",
+    title: "Front-end Development",
+    description:
+      "Intuitive,engaging and responsive using the best of breed framework & stacks",
+  },
+  {
+    image: "/image/pic6.png",
+    title: "Back-end Development",
+    description:
+      "Build responsive,intuitive cloud and data-native apps utilizing top-tier frameworks and technologies",
+  },
+  {
+    image: "/image/pic8.png",
+    title: "Quality Engineering & Testing",
+    description:
+      "Our software testing frameworks and methodology use automation frame-works and solutions to guarantee superior product qualitys",
+  },
+  {
+    image: "",
+    title: "DevOps as a Service",
+    description:
+      "Our DevOps team works closely with the development team to automate the end-to-end delivery pipeline across cloud platforms",
+  },
+  {
+    image: "/image/pic7.png",
+    title: "DevOps as a Service",
+    description:
+      "Our DevOps team works closely with the development team to automate the end-to-end delivery pipeline across cloud platforms",
+  },
+  {
+    image: "/image/pic2.png",
+    title: "ios Development",
+    description:
+      "We develop intuitive iPhone and iPad applications, using Swift and Objective-C. We are well-versed with the related ecosystem as well as other frameworks such as SQLite, UI Kit, GData, Zxing, Cocos2d game engine, Apple push service & more",
+  },
+  {
+    image: "/image/pic3.png",
+    title: "Android Development",
+    description:
+      "With whooping market shares, Android is a widely used operating system across the globe. It is also one of the most complex ecosystems with a myriad of phones with different dimensions, screen size and resolution. We develop custom Android applications for businesses across varied domains",
+  },
+  {
+    image: "",
+    title: "Hybrid Application Development",
+    description:
+      "We use a variety of technologies to develop platform-agnostic hybrid applications, resulting in superior user experience. We have expertise in various cross-platform frameworks, such as React, Ionic, Phonegap, Sencha, Appcelerator, Titanium",
+  },
+  {
+    image: "",
+    title: "Mobile Automation Testing",
+    description:
+      "We address the challenges of mobile testing using targeted device selection and maximizing the use of automation to reduce costs. We use a comprehensive suite of test frameworks and tools to fine-tune the application performance experience",
+  },
+  {
+    image: "/image/pic10.png",
+    title: "Flutter Application Development",
+    description:
+      "We are a functional Flutter development company that builds native Flutter apps to engage your target audience meaningfully. Our development team is skilled at building multi-platform mobile applications using Flutter design and Cupertino (iOS style) components, that perform seamlessly across devices",
   },
 ];
