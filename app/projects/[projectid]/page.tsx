@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { projects } from "@/data/data";
 import Hero from "@/components/our-projects/ProjectID/Hero";
 import ProjectDetails from "@/components/our-projects/ProjectID/ProjectDetails";
@@ -18,8 +16,8 @@ export default async function Page({ params }: Props) {
         {/* Hero Container */}
         <Hero title={project.title} imgUrl={project.img} />
         <ProjectDetails 
-          description={project.description}
           techStack={project.techstack}
+          about={project.about}
         />
       </section>
     </>

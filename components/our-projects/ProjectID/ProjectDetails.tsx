@@ -1,39 +1,44 @@
+import Card from "@/components/common/Card";
+
 interface Props {
-    description: string,
-    techStack: string[]
+  techStack: string[];
+  about: Record<string, string | number>
 }
 
-export default function ProjectDetails({description, techStack}: Props) {
+export default function ProjectDetails({ techStack, about }: Props) {
   return (
-    <div className="max-w-[860px] mx-auto px-4 py-12 space-y-12 md:px-12 md:py-20">
-      <p className="text-xl text-secondary text-justify font-medium md:text-xl lg:text-2xl">
-        {description}
+    <div className="max-w-[860px] mx-auto px-4 py-12 md:px-12 md:py-20">
+      <h2 className="mb-8 text-3xl text-primaryDark font-semibold md:text-6xl">About Project</h2>
+      <p className="mb-8 text-lg text-secondary md:text-xl">
+        {about.description}
       </p>
-      <div className="flex flex-col gap-4 py-8 font-semibold border border-slate-500 border-b-4 border-b-primary rounded-md text-xl md:flex-row md:justify-between md:px-8">
-        <div className="flex flex-col items-center md:items-start">
-          <span>INDUSTRY</span>
-          <span className="text-secondary">Healthcare</span>
+      <Card className="mb-16 border-slate-500 border-b-4 border-b-primary ">
+        <div className="flex flex-col gap-4 py-8 font-semibold text-lg sm:flex-row sm:justify-between sm:px-8 sm:text-xl">
+          <div className="flex flex-col items-center">
+            <span className="text-primaryDark">INDUSTRY</span>
+            <span className="text-secondary">{about.industry}</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <span className="text-primaryDark">TEAM</span>
+            <span className="text-secondary">{about.teamMembers}</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <span className="text-primaryDark">STARTED IN</span>
+            <span className="text-secondary">{about.launch}</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <span>COUNTRY</span>
+            <span className="text-secondary">{about.country}</span>
+          </div>
         </div>
-        <div className="flex flex-col items-center md:items-start">
-          <span>TEAM</span>
-          <span className="text-secondary">7</span>
-        </div>
-        <div className="flex flex-col items-center md:items-start">
-          <span>STARTED IN</span>
-          <span className="text-secondary">2021</span>
-        </div>
-        <div className="flex flex-col items-center md:items-start">
-          <span>COUNTRY</span>
-          <span className="text-secondary">USA</span>
-        </div>
-      </div>
-      <div className="space-y-4 ">
-        <span className="text-2xl font-semibold">Technology Used</span>
+      </Card>
+      <div className="mb-8 space-y-6">
+        <span className="text-2xl text-primaryDark font-semibold md:text-4xl">Technology Used</span>
         <div className="flex flex-wrap gap-4">
           {techStack.map((tech, i) => (
             <span
               key={i}
-              className="bg-teal-100 px-2 py-1 rounded-md font-medium text-xl"
+              className="bg-teal-100 px-2 py-1 rounded-md font-medium text-lg md:text-xl"
             >
               {tech}
             </span>

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaIndustry } from "react-icons/fa";
 
 import { projects } from "@/data/data";
 import Card from "../../common/Card";
@@ -28,7 +30,7 @@ export default function Projects() {
                   />
                 </div>
                 {/* About Project */}
-                <div className="basis-1/2 flex flex-col px-4 py-8 gap-4">
+                <div className="basis-1/2 flex flex-col px-4 py-8 gap-4">                  
                   <span className="text-2xl font-semibold md:text-3xl">
                     {project.title}
                   </span>
@@ -44,6 +46,16 @@ export default function Projects() {
                         {tech}
                       </span>
                     ))}
+                  </div>
+                  <div className="h-full flex mt-4 justify-between items-end text-lg md:text-xl">
+                    <div className="flex items-center gap-2">
+                      <FaIndustry className="text-secondary"/>
+                      <span className="text-secondary font-medium">{project.about.industry}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <FaLocationDot className="text-secondary"/>
+                      <span>{project.about.country}</span>
+                    </div>
                   </div>
                 </div>
               </Card>

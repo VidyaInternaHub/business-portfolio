@@ -15,8 +15,8 @@ export default function Hero({title, imgUrl}: Props) {
               </h1>
               <Image
                 src={`/images/${imgUrl}`}
-                width={720}
-                height={480}
+                width={1420}
+                height={1080}
                 className="w-full h-full rounded-md"
                 alt={imgUrl}
               />
