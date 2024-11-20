@@ -1,8 +1,8 @@
-import React from "react";
 import Hero from "@/components/tech-stack/Hero/Hero";
-export default function ourservicedescription() {
+
+export default function ourservices() {
   return (
-    <div>
+    <div className="min-h-screen bg-background">
       <Hero />
     </div>
   );

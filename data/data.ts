@@ -27,7 +27,7 @@ export const navbarLinks = [
   },
   {
     name: "Services",
-    url: "/ourservices",
+    url: "/services",
   },
   {
     name: "Projects",
