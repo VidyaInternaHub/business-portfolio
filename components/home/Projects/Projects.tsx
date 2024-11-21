@@ -7,7 +7,7 @@ import Button from "@/components/common/Button";
 
 export default function Projects() {
   return (
-    <section className="max-w-[1190px] m-auto mt-16 px-4 py-12 font-poppins  md:px-12">
+    <section className="px-4 py-4 md:px-20 md:py-10 lg:px-10 xl:px-20 font-poppins">
       <div className="text-primaryDark">
         <h3 className="text-4xl text-center font-bold md:text-6xl">
           Our Projects
