@@ -1,66 +1,40 @@
-import Image from "next/image";
 import Link from "next/link";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaIndustry } from "react-icons/fa";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 import { projects } from "@/data/data";
-import Card from "../../common/Card";
+import ProjectCard from "@/components/common/ProjectCard";
+import Button from "@/components/common/Button";
 
 export default function Projects() {
   return (
-    <section className="max-w-[1190px] m-auto px-4 py-12 font-poppins  md:px-12">
+    <section className="max-w-[1190px] m-auto mt-16 px-4 py-12 font-poppins  md:px-12">
       <div className="text-primaryDark">
         <h3 className="text-4xl text-center font-semibold md:text-6xl">
           Our Projects
         </h3>
         <div className="mt-8 grid grid-cols-1 gap-12 lg:mt-12">
-          {projects.map((project, index) => (
+          {projects.slice(0, 3).map((project, index) => (
             <Link key={index} href={`/projects/${project.id}`}>
-              <Card                
-                className="group flex flex-col justify-between bg-background border-slate-400 cursor-pointer overflow-hidden lg:flex-row"
-              >
-                {/* Image */}
-                <div>
-                  <Image
-                    src={`/images/${project.img}`}
-                    width={720}
-                    height={480}
-                    className="w-full h-full lg:w-[680px]"
-                    alt={project.img}
-                  />
-                </div>
-                {/* About Project */}
-                <div className="basis-1/2 flex flex-col px-4 py-8 gap-4">                  
-                  <span className="text-2xl font-semibold md:text-3xl">
-                    {project.title}
-                  </span>
-                  <span className="text-lg text-justify md:text-xl">
-                    {project.description}
-                  </span>
-                  <div className="flex flex-wrap gap-4">
-                    {project.techstack.map((tech, i) => (
-                      <span
-                        key={i}
-                        className="bg-teal-100 px-2 py-1 rounded-md font-medium text-sm md:text-base"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="h-full flex mt-4 justify-between items-end text-lg md:text-xl">
-                    <div className="flex items-center gap-2">
-                      <FaIndustry className="text-secondary"/>
-                      <span className="text-secondary font-medium">{project.about.industry}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <FaLocationDot className="text-secondary"/>
-                      <span>{project.about.country}</span>
-                    </div>
-                  </div>
-                </div>
-              </Card>
+              <ProjectCard 
+                img={project.img}
+                title={project.title}
+                description={project.description}
+                techstack={project.techstack}
+                industry={project.about.industry}
+                country={project.about.country}
+              />
             </Link>
           ))}
+        </div>
+        <div className="my-16 flex justify-center">
+        <Button
+          href="/projects"
+          buttonType="primaryButton"
+          className="flex items-center px-8 py-2 gap-2 text-lg"
+          >
+          More Projects
+          <FaArrowUpRightFromSquare className=""/>
+        </Button>
         </div>
       </div>
     </section>
