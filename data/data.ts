@@ -436,13 +436,7 @@ export const servicecarddescriptionData = [
       "Our software testing frameworks and methodology use automation frame-works and solutions to guarantee superior product qualitys",
   },
   {
-    image: "",
-    title: "DevOps as a Service",
-    description:
-      "Our DevOps team works closely with the development team to automate the end-to-end delivery pipeline across cloud platforms",
-  },
-  {
-    image: "/image/pic7.png",
+    image: "/image/pic21.png",
     title: "DevOps as a Service",
     description:
       "Our DevOps team works closely with the development team to automate the end-to-end delivery pipeline across cloud platforms",
@@ -460,19 +454,19 @@ export const servicecarddescriptionData = [
       "With whooping market shares, Android is a widely used operating system across the globe. It is also one of the most complex ecosystems with a myriad of phones with different dimensions, screen size and resolution. We develop custom Android applications for businesses across varied domains",
   },
   {
-    image: "",
+    image: "/image/pic11.png",
     title: "Hybrid Application Development",
     description:
       "We use a variety of technologies to develop platform-agnostic hybrid applications, resulting in superior user experience. We have expertise in various cross-platform frameworks, such as React, Ionic, Phonegap, Sencha, Appcelerator, Titanium",
   },
   {
-    image: "",
+    image: "/image/pic12.png",
     title: "Mobile Automation Testing",
     description:
       "We address the challenges of mobile testing using targeted device selection and maximizing the use of automation to reduce costs. We use a comprehensive suite of test frameworks and tools to fine-tune the application performance experience",
   },
   {
-    image: "/image/pic10.png",
+    image: "/image/pic23.svg",
     title: "Flutter Application Development",
     description:
       "We are a functional Flutter development company that builds native Flutter apps to engage your target audience meaningfully. Our development team is skilled at building multi-platform mobile applications using Flutter design and Cupertino (iOS style) components, that perform seamlessly across devices",
