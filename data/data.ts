@@ -247,149 +247,77 @@ export const caseStudies = [
   },
 ];
 
-export const projectsData = [
-  {
-    id: 0,
-    img: "project-1.png",
-    title: "E-commerce Website Redesign",
-    description:
-      "Revamped an online store to improve user experience and sales",
-    url: "",
-    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"],
-  },
+export const projects = [
   {
     id: 1,
-    img: "project-2.png",
-    title: "Mobile App Development for Fitness Tracking",
-    description:
-      "Created an intuitive fitness app for real-time progress tracking.",
-    url: "",
-    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"],
+    title: "Business Portfolio",
+    description: "A business portfolio website to showcase the company core values and projects.",
+    img: "project-1.png",
+    techstack: ["Next.js", "Tailwind CSS", "TypeScript", "Zustand","MongoDB", "Express", "Git", "AWS"],
+    about: {
+      description: "A professional, visually appealing platform to showcase business services, projects, and client testimonials, providing a seamless experience for potential clients and partners.",
+      teamMembers: 5,
+      country: "India",
+      industry: "Professional Services",
+      launch: 2021
+    }
   },
   {
     id: 2,
-    img: "project-1.png",
-    title: "Food Delivery App Design",
-    description: "Created an intuitive mobile app for seamless food ordering.",
-    url: "",
-    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"],
+    title: "E-commerce Website",
+    description: "An online shopping platform with product listings, a shopping cart, and payment gateway integration.",
+    img: "project-2.png",
+    techstack: ["React", "Node.js", "MongoDB", "Express", "Stripe API", "Git", "AWS"],
+    about: {
+      description: "A scalable online store platform with seamless product browsing, secure checkout, and integrated payment solutions, offering a user-friendly experience for customers and vendors.",
+      teamMembers: 5,
+      country: "India",
+      industry: "E-Commerce",
+      launch: 2021
+    }
   },
+  {
+    id: 3,
+    title: "Employee Task & Project Management Dashboard",
+    description: "Dashboard to manage tasks, projects, deadlines, and team collaboration effectively.",
+    img: "project-3.png",
+    techstack: ["React", "Node.js", "MongoDB", "Express", "WebSocket", "Chart.js"],
+    about: {
+      description: "A comprehensive platform designed to streamline team collaboration, track project progress, assign tasks, and enhance productivity through real-time updates and task management features.",
+      teamMembers: 5,
+      country: "India",
+      industry: "Enterprise Software",
+      launch: 2021
+    }
+  },
+  {
+    id: 4,
+    title: "Blog Platform",
+    description: "A blogging platform where users can create, edit, and delete blog posts.",
+    img: "project-4.png",
+    techstack: ["Angular", "Node.js", "MongoDB", "Express",  "Git", "AWS"],
+    about: {
+      description: "A content management system (CMS) enabling users to create, edit, and share blogs with an intuitive interface, while supporting real-time comments and user engagement.",
+      teamMembers: 5,
+      country: "India",
+      industry: "Media",
+      launch: 2021
+    }
+  },
+  {
+    id: 5,
+    title: "Real-Time Chat Application",
+    description: "A real-time chat app with private messaging and group chat features.",
+    img: "project-5.png",
+    techstack: ["Socket.io", "Node.js", "Express", "MongoDB", "React",  "Git", "AWS"],
+    about: {
+      description: "A real-time messaging platform facilitating secure one-on-one and group chats, with integrated multimedia sharing and notifications for enhanced communication.",
+      teamMembers: 5,
+      country: "India",
+      industry: "Social Media",
+      launch: 2021
+    }
+  }
 ];
 
-export const aboutUsPageData = {
-  data: [
-    {
-      title: "Transparency",
-      description:
-        "At VidyaInterna Hub, we prioritize honesty and open communication, fostering trust with clients, partners, and employees. Transparency ensures everyone is aligned and engaged in creating exceptional products.",
-    },
-    {
-      title: "Innovation",
-      description:
-        "We embrace cutting-edge technologies and forward-thinking approaches to stay ahead. Our commitment to innovation drives continuous improvement and empowers us to deliver groundbreaking solutions.",
-    },
-    {
-      title: "Collaboration",
-      description:
-        "Teamwork is at the core of our success. By uniting diverse talents and perspectives, we create innovative solutions and achieve remarkable results for our clients.",
-    },
-    {
-      title: "Excellence",
-      description:
-        "Delivering high-quality products and services is our priority. We focus on exceeding expectations through precision, dedication, and an unwavering commitment to excellence.",
-    },
-    {
-      title: "Customer Focus",
-      description:
-        "Our customers are at the heart of everything we do. We are committed to understanding their needs and delivering solutions that add real value to their lives and businesses.",
-    },
-    {
-      title: "Sustainability",
-      description:
-        "We are dedicated to making a positive impact on the environment and society. Our efforts are focused on sustainable practices that align with our values and contribute to a better future.",
-    },
-  ],
-  words:
-    "At VidyaInterna Hub, we are dedicated to revolutionizing the education and training landscape. As a leading player in the Education & Training Services sector, we provide innovative and impactful learning experiences designed to prepare the next generation of professionals for success. Join us in shaping the future of education and training, and be a part of a team that is passionate about nurturing talent and driving innovation.",
-};
 
-export const footerData = {
-  company: {
-    name: "VidyaInterna Hub",
-    description:
-      "Building digital excellence through innovative solutions and transformative experiences.",
-    socialLinks: [
-      {
-        name: "LinkedIn",
-        url: "https://linkedin.com",
-        icon: FaLinkedin,
-      },
-      {
-        name: "GitHub",
-        url: "https://github.com",
-        icon: FaGithub,
-      },
-    ],
-  },
-  quickLinks: [
-    {
-      name: "About Us",
-      url: "/about",
-    },
-    {
-      name: "Careers",
-      url: "/careers",
-    },
-    {
-      name: "Contact Us",
-      url: "/contactus",
-    },
-    {
-      name: "Investor Relations",
-      url: "/investorrelation",
-    },
-  ],
-  legal: [
-    {
-      name: "Terms Of Use",
-      url: "/termsofuse",
-    },
-    {
-      name: "Privacy Policy",
-      url: "/privacypolicy",
-    },
-    // {
-    //   name: "Cookie policy",
-    //   url: "/cookiepolicy",
-    // },
-    // {
-    //   name: "Accessibility",
-    //   url: "/accessibility",
-    // },
-  ],
-  services: [
-    {
-      name: "Web Development",
-      url: "/webdevelopment",
-    },
-    {
-      name: "Mobile App Development",
-      url: "/mobileappdevelopmwnt",
-    },
-    {
-      name: "UI/UX Design",
-      url: "/design",
-    },
-  ],
-  contact: {
-    phone: "+91 951 687 1900",
-    email: "contact@vidyainterna.com",
-    address: {
-      street: "MP Nagar, Zone 1",
-      city: "Bhopal",
-      state: "Madhya Pradesh",
-      country: "India",
-      pincode: "462011",
-    },
-  },
-};
