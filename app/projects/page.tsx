@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import Hero from "@/components/our-projects/Hero/Hero";
 import ProjectCard from "@/components/common/ProjectCard";
-import { projects } from "@/data/data";
+import { projects } from "@/data/project";
 
 export default function Page() {
   return (

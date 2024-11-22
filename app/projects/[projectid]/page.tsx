@@ -1,4 +1,4 @@
-import { projects } from "@/data/data";
+import { projects } from "@/data/project";
 import Hero from "@/components/our-projects/ProjectID/Hero";
 import ProjectDetails from "@/components/our-projects/ProjectID/ProjectDetails";
 
@@ -18,6 +18,9 @@ export default async function Page({ params }: Props) {
         <ProjectDetails 
           techStack={project.techstack}
           about={project.about}
+          challenges={project.about.challenges}
+          solutions={project.about.solutions}
+          result={project.about.result}
         />
       </section>
     </>

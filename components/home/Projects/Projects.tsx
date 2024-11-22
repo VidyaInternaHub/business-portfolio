@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
-import { projects } from "@/data/data";
+import { projects } from "@/data/project";
 import ProjectCard from "@/components/common/ProjectCard";
 import Button from "@/components/common/Button";
 

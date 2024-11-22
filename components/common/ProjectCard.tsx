@@ -3,12 +3,18 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaIndustry } from "react-icons/fa";
 
 import Card from "./Card";
+import { IconType } from "react-icons";
+
+type techType = {
+  icon: IconType,
+  name: string
+}
 
 interface Props {
     img: string,
     title: string,
     description: string,
-    techstack: string[],
+    techstack: techType[],
     industry: string,
     country: string
 }
@@ -47,7 +53,7 @@ export default function ProjectCard({
               key={i}
               className="bg-teal-100 px-2 py-1 rounded-md font-medium text-sm md:text-base"
             >
-              {tech}
+              {tech.name}
             </span>
           ))}
         </div>
