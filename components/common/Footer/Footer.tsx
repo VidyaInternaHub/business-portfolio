@@ -1,9 +1,5 @@
 import Link from "next/link";
-import {
-  FaPhone,
-  FaEnvelope,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { footerData } from "@/data/data";
 import Logo from "../Logo";
 
@@ -46,7 +42,8 @@ export default function Footer() {
               {quickLinks.map((link) => (
                 <li key={link.name}>
                   <Link
-                    href={link.url}
+                    // href={link.url}
+                    href={link.name === "About Us" ? link.url : "#"}
                     className="text-gray-400 hover:text-accent transition-colors"
                   >
                     {link.name}
@@ -62,12 +59,12 @@ export default function Footer() {
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service.name}>
-                  <Link
-                    href={service.url}
-                    className="text-gray-400 hover:text-accent transition-colors"
+                  <div
+                    // href={service.url}
+                    className="text-gray-400 cursor-default"
                   >
                     {service.name}
-                  </Link>
+                  </div>
                 </li>
               ))}
             </ul>
@@ -98,8 +95,10 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="text-accent mt-1" />
                 <p className="text-gray-400">
-                  {contact.address.street}<br />
-                  {contact.address.city}, {contact.address.state}<br />
+                  {contact.address.street}
+                  <br />
+                  {contact.address.city}, {contact.address.state}
+                  <br />
                   {contact.address.country} - {contact.address.pincode}
                 </p>
               </div>
@@ -117,7 +116,8 @@ export default function Footer() {
               {legal.map((link) => (
                 <Link
                   key={link.name}
-                  href={link.url}
+                  // href={link.url}
+                  href="#"
                   className="text-gray-400 hover:text-accent text-sm transition-colors"
                 >
                   {link.name}

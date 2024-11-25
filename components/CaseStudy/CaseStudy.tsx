@@ -53,7 +53,7 @@ export default function CaseStudy() {
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <Card className="shadow-lg h-80">
+                  <Card className="shadow-lg min-h-80">
                     <CardContent className="p-0">
                       <div className="flex flex-col md:flex-row">
                         

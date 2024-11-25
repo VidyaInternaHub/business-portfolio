@@ -24,10 +24,10 @@ export const navbarLinks = [
     name: "Home",
     url: "/",
   },
-  // {
-  //   name: "Services",
-  //   url: "/services",
-  // },
+  {
+    name: "Services",
+    url: "/services",
+  },
   {
     name: "Projects",
     url: "/projects",
@@ -72,126 +72,105 @@ export const techStackData = {
 export const testimonialsData = [
   {
     id: 1,
-    title: "Title1",
+    title: "Outstanding Web Development",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam",
+      "VidyaInterna Hub transformed our online presence with a stunning Next.js website. Their attention to detail and expertise in modern web technologies resulted in a fast, responsive, and user-friendly platform. The team's communication was excellent throughout the project, and they delivered ahead of schedule. Our new website has significantly improved our user engagement and conversion rates.",
     userImage: "/assets/images/user1.jpg",
     logo: "/assets/logos/logo.svg",
-    name: "Rosalia Tungaraza",
-    role: "Ph.D, AVP, Artificial Intelligence, Baptist Health",
+    name: "Sarah Chen",
+    role: "CTO, TechVision Solutions",
   },
   {
     id: 2,
-    title: "Title2",
+    title: "Exceptional Mobile App Development",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam",
+      "Working with VidyaInterna Hub on our mobile app was a fantastic experience. They developed a robust, scalable solution that exceeded our expectations. Their team's expertise in both iOS and Android platforms ensured a consistent user experience across devices. The app's performance and user feedback have been outstanding, helping us reach a wider audience.",
     userImage: "/assets/images/user2.jpg",
     logo: "/assets/logos/logo.svg",
-    name: "Rosalia Tungaraza",
-    role: "Ph.D, AVP, Artificial Intelligence, Baptist Health",
+    name: "Michael Rodriguez",
+    role: "Product Manager, InnovateMobile",
   },
   {
     id: 3,
-    title: "Title3",
+    title: "Revolutionary UI/UX Design",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam",
+      "VidyaInterna Hub's UI/UX team completely revolutionized our product's interface. Their user-centered design approach and attention to detail resulted in a significant improvement in user satisfaction and engagement metrics. The new design is not only visually appealing but also highly intuitive and accessible. Our customer feedback has been overwhelmingly positive.",
     userImage: "/assets/images/user3.jpg",
     logo: "/assets/logos/logo.svg",
-    name: "Rosalia Tungaraza",
-    role: "Ph.D, AVP, Artificial Intelligence, Baptist Health",
+    name: "Emily Watson",
+    role: "Head of Design, CreativeTech Solutions",
   },
   {
     id: 4,
-    title: "Title4",
+    title: "Seamless E-commerce Integration",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam",
+      "VidyaInterna Hub expertly integrated our e-commerce platform with a custom-built web solution. Their technical prowess in handling complex payment systems and inventory management was impressive. The resulting platform is secure, scalable, and has dramatically improved our online sales performance. Their support during and after deployment was exceptional.",
     userImage: "/assets/images/user4.jpg",
     logo: "/assets/logos/logo.svg",
-    name: "Rosalia Tungaraza",
-    role: "Ph.D, AVP, Artificial Intelligence, Baptist Health",
+    name: "David Park",
+    role: "E-commerce Director, GlobalRetail Solutions",
   },
   {
     id: 5,
-    title: "Title5",
+    title: "Best-in-Class Enterprise App Development",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam",
+      "Our enterprise needed a sophisticated internal management app, and VidyaInterna Hub delivered beyond expectations. They created a powerful, secure, and user-friendly solution that streamlined our operations. Their expertise in cross-platform development and enterprise-grade security measures was evident throughout. The app has significantly improved our team's productivity.",
     userImage: "/assets/images/user5.jpg",
     logo: "/assets/logos/logo.svg",
-    name: "Rosalia Tungaraza",
-    role: "Ph.D, AVP, Artificial Intelligence, Baptist Health",
+    name: "Amanda Foster",
+    role: "Operations Manager, Enterprise Systems Inc.",
   },
   {
     id: 6,
-    title: "Title6",
+    title: "Transformative Design System Implementation",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam",
+      "VidyaInterna Hub revolutionized our product ecosystem with a comprehensive design system. Their UI/UX team demonstrated exceptional skill in creating consistent, accessible, and scalable design components. The implementation has drastically reduced our development time and improved our product's visual coherence. A truly transformative collaboration.",
     userImage: "/assets/images/user6.jpg",
     logo: "/assets/logos/logo.svg",
-    name: "Rosalia Tungaraza",
-    role: "Ph.D, AVP, Artificial Intelligence, Baptist Health",
+    name: "James Wilson",
+    role: "Design Director, InnovateUX",
   },
   {
     id: 7,
-    title: "Title7",
+    title: "Innovative Progressive Web App Development",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam",
+      "VidyaInterna Hub developed a cutting-edge PWA that perfectly matched our vision. Their expertise in modern web technologies and offline-first approach resulted in an app that works flawlessly across all devices. The performance metrics and user engagement have exceeded our expectations, and the implementation of push notifications has significantly improved user retention.",
     userImage: "/assets/images/user7.jpg",
     logo: "/assets/logos/logo.svg",
-    name: "Rosalia Tungaraza",
-    role: "Ph.D, AVP, Artificial Intelligence, Baptist Health",
+    name: "Rachel Martinez",
+    role: "Product Lead, TechStart Solutions",
   },
   {
     id: 8,
-    title: "Title8",
+    title: "Expert UI/UX Research and Implementation",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam",
+      "The team at VidyaInterna Hub conducted thorough user research and delivered a complete UI/UX overhaul of our platform. Their data-driven approach to design decisions and attention to user feedback resulted in a 40% increase in user satisfaction. The new interface is intuitive, accessible, and perfectly aligned with our brand identity.",
     userImage: "/assets/images/user8.jpg",
     logo: "/assets/logos/logo.svg",
-    name: "Rosalia Tungaraza",
-    role: "Ph.D, AVP, Artificial Intelligence, Baptist Health",
+    name: "Thomas Zhang",
+    role: "UX Director, DigitalFirst Corp",
   },
   {
     id: 9,
-    title: "Title9",
+    title: "Full-Stack Web Application Excellence",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam",
+      "VidyaInterna Hub built our complex web application from the ground up. Their full-stack expertise and methodical approach to development resulted in a robust, scalable solution. The implementation of real-time features and advanced data visualization has transformed how our users interact with our platform. Exceptional work!",
     userImage: "/assets/images/user9.jpg",
     logo: "/assets/logos/logo.svg",
-    name: "Rosalia Tungaraza",
-    role: "Ph.D, AVP, Artificial Intelligence, Baptist Health",
+    name: "Lisa Anderson",
+    role: "Technical Director, DataSync Technologies",
   },
   {
     id: 10,
-    title: "Title10",
+    title: "Mobile-First Development Success",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit.",
+      "Working with VidyaInterna Hub on our mobile-first platform was a game-changer. Their deep understanding of responsive design and mobile optimization techniques delivered an exceptional user experience. The performance improvements and intuitive interface they implemented have resulted in a 200% increase in mobile user engagement.",
     userImage: "/assets/images/user10.jpg",
     logo: "/assets/logos/logo.svg",
-    name: "Rosalia Tungaraza",
-    role: "Ph.D, AVP, Artificial Intelligence, Baptist Health",
-  },
-  {
-    id: 11,
-    title: "Title11",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam",
-    userImage: "/assets/images/user11.jpg",
-    logo: "/assets/logos/logo.svg",
-    name: "Rosalia Tungaraza",
-    role: "Ph.D, AVP, Artificial Intelligence, Baptist Health",
-  },
-  {
-    id: 12,
-    title: "Title12",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada lacus in laoreet lacinia. Phasellus nisl ex, tempor a hendrerit ac, congue vulputate diam",
-    userImage: "/assets/images/user12.jpg",
-    logo: "/assets/logos/logo.svg",
-    name: "Rosalia Tungaraza",
-    role: "Ph.D, AVP, Artificial Intelligence, Baptist Health",
+    name: "Kevin Patel",
+    role: "Mobile Strategy Director, AppFuture",
   },
 ];
-
 export const faqData = [
   {
     question: "What services do you offer?",
@@ -219,7 +198,6 @@ export const faqData = [
       "We maintain transparent communication through regular updates, scheduled check-ins, and a dedicated project manager. We use collaborative tools to ensure you're always informed about your project's progress.",
   },
 ];
-
 export const caseStudies = [
   {
     id: 1,
@@ -259,20 +237,115 @@ export const projectsData = [
   },
   {
     id: 1,
-    img: "project-2.png",
-    title: "Mobile App Development for Fitness Tracking",
+    title: "Business Portfolio",
     description:
-      "Created an intuitive fitness app for real-time progress tracking.",
-    url: "",
-    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"],
+      "A business portfolio website to showcase the company core values and projects.",
+    img: "project-1.png",
+    techstack: [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Zustand",
+      "MongoDB",
+      "Express",
+      "Git",
+      "AWS",
+    ],
+    about: {
+      description:
+        "A professional, visually appealing platform to showcase business services, projects, and client testimonials, providing a seamless experience for potential clients and partners.",
+      teamMembers: 5,
+      country: "India",
+      industry: "Professional Services",
+      launch: 2021,
+    },
   },
   {
     id: 2,
-    img: "project-1.png",
-    title: "Food Delivery App Design",
-    description: "Created an intuitive mobile app for seamless food ordering.",
-    url: "",
-    techStack: ["next.js", "react.js", "node.js", "express.js", "mongodb"],
+    title: "E-commerce Website",
+    description:
+      "An online shopping platform with product listings, a shopping cart, and payment gateway integration.",
+    img: "project-2.png",
+    techstack: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express",
+      "Stripe API",
+      "Git",
+      "AWS",
+    ],
+    about: {
+      description:
+        "A scalable online store platform with seamless product browsing, secure checkout, and integrated payment solutions, offering a user-friendly experience for customers and vendors.",
+      teamMembers: 5,
+      country: "India",
+      industry: "E-Commerce",
+      launch: 2021,
+    },
+  },
+  {
+    id: 3,
+    title: "Employee Task & Project Management Dashboard",
+    description:
+      "Dashboard to manage tasks, projects, deadlines, and team collaboration effectively.",
+    img: "project-3.png",
+    techstack: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express",
+      "WebSocket",
+      "Chart.js",
+    ],
+    about: {
+      description:
+        "A comprehensive platform designed to streamline team collaboration, track project progress, assign tasks, and enhance productivity through real-time updates and task management features.",
+      teamMembers: 5,
+      country: "India",
+      industry: "Enterprise Software",
+      launch: 2021,
+    },
+  },
+  {
+    id: 4,
+    title: "Blog Platform",
+    description:
+      "A blogging platform where users can create, edit, and delete blog posts.",
+    img: "project-4.png",
+    techstack: ["Angular", "Node.js", "MongoDB", "Express", "Git", "AWS"],
+    about: {
+      description:
+        "A content management system (CMS) enabling users to create, edit, and share blogs with an intuitive interface, while supporting real-time comments and user engagement.",
+      teamMembers: 5,
+      country: "India",
+      industry: "Media",
+      launch: 2021,
+    },
+  },
+  {
+    id: 5,
+    title: "Real-Time Chat Application",
+    description:
+      "A real-time chat app with private messaging and group chat features.",
+    img: "project-5.png",
+    techstack: [
+      "Socket.io",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "React",
+      "Git",
+      "AWS",
+    ],
+    about: {
+      description:
+        "A real-time messaging platform facilitating secure one-on-one and group chats, with integrated multimedia sharing and notifications for enhanced communication.",
+      teamMembers: 5,
+      country: "India",
+      industry: "Social Media",
+      launch: 2021,
+    },
   },
 ];
 
@@ -312,7 +385,6 @@ export const aboutUsPageData = {
   words:
     "At VidyaInterna Hub, we are dedicated to revolutionizing the education and training landscape. As a leading player in the Education & Training Services sector, we provide innovative and impactful learning experiences designed to prepare the next generation of professionals for success. Join us in shaping the future of education and training, and be a part of a team that is passionate about nurturing talent and driving innovation.",
 };
-
 export const footerData = {
   company: {
     name: "VidyaInterna Hub",
@@ -393,3 +465,86 @@ export const footerData = {
     },
   },
 };
+
+export const servicecardData = [
+  {
+    image: "/icons/web.svg",
+    title: "Web Development",
+    description:
+      "User-Friendly webplatforms,SaaS application and software products leveraging edge technologies",
+  },
+  {
+    image: "/icons/mobile.svg",
+    title: "Mobility",
+    description:
+      "Native and Hybrid applications with compelling UX after extensive user research,design modeliing across platforms",
+  },
+  {
+    image: "icons/uiux.svg",
+    title: "UI/UX Design",
+    description:
+      "Crafting an intuitive and engaging user experience,blending aesthetics & functionality",
+  },
+];
+export const servicecarddescriptionData = [
+  {
+    image: "/image/pic1.png",
+    title: "Experience Design",
+    description:
+      "Design-led engineering to provide a seamless experience to the users",
+  },
+  {
+    image: "/image/pic5.png",
+    title: "Front-end Development",
+    description:
+      "Intuitive,engaging and responsive using the best of breed framework & stacks",
+  },
+  {
+    image: "/image/pic6.png",
+    title: "Back-end Development",
+    description:
+      "Build responsive,intuitive cloud and data-native apps utilizing top-tier frameworks and technologies",
+  },
+  {
+    image: "/image/pic8.png",
+    title: "Quality Engineering & Testing",
+    description:
+      "Our software testing frameworks and methodology use automation frame-works and solutions to guarantee superior product qualitys",
+  },
+  {
+    image: "/image/pic21.png",
+    title: "DevOps as a Service",
+    description:
+      "Our DevOps team works closely with the development team to automate the end-to-end delivery pipeline across cloud platforms",
+  },
+  {
+    image: "/image/pic2.png",
+    title: "ios Development",
+    description:
+      "We develop intuitive iPhone and iPad applications, using Swift and Objective-C. We are well-versed with the related ecosystem as well as other frameworks such as SQLite, UI Kit, GData, Zxing, Cocos2d game engine, Apple push service & more",
+  },
+  {
+    image: "/image/pic3.png",
+    title: "Android Development",
+    description:
+      "With whooping market shares, Android is a widely used operating system across the globe. It is also one of the most complex ecosystems with a myriad of phones with different dimensions, screen size and resolution. We develop custom Android applications for businesses across varied domains",
+  },
+  {
+    image: "/image/pic11.png",
+    title: "Hybrid Application Development",
+    description:
+      "We use a variety of technologies to develop platform-agnostic hybrid applications, resulting in superior user experience. We have expertise in various cross-platform frameworks, such as React, Ionic, Phonegap, Sencha, Appcelerator, Titanium",
+  },
+  {
+    image: "/image/pic12.png",
+    title: "Mobile Automation Testing",
+    description:
+      "We address the challenges of mobile testing using targeted device selection and maximizing the use of automation to reduce costs. We use a comprehensive suite of test frameworks and tools to fine-tune the application performance experience",
+  },
+  {
+    image: "/image/pic23.svg",
+    title: "Flutter Application Development",
+    description:
+      "We are a functional Flutter development company that builds native Flutter apps to engage your target audience meaningfully. Our development team is skilled at building multi-platform mobile applications using Flutter design and Cupertino (iOS style) components, that perform seamlessly across devices",
+  },
+];
