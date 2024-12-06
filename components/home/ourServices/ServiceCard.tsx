@@ -1,7 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Card from "@/components/common/Card";
-const ServiceCard = ({ image, title, description }) => {
+
+interface ServiceCardProps {
+  image: string;
+  title: string;
+  description: string;
+}
+
+const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
   return (
     <Card className="rounded md:w-1/3  bg-accent shadow-lg bg-opacity-5 overflow-hidden  hover:shadow-xl transition-transform duration-300 hover:scale-105   hover:cursor-pointer box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); ">
       <div className="h-20 w-20">
