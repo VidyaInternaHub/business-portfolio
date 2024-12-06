@@ -1,8 +1,14 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Card from "@/components/common/Card";
 
-export default function ({ image, title, description }) {
+interface OurServiceCardProps {
+  image: StaticImageData;
+  title: string;
+  description: string;
+}
+
+export default function OurServiceCard({ image, title, description }: OurServiceCardProps) {
   return (
     <Card className="rounded   bg-accent hover:bg-red-50 shadow-lg bg-opacity-5 overflow-hidden  hover:shadow-xl     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06); ">
       <div className="md:h-32 md:w-32 h-24 w-24">
