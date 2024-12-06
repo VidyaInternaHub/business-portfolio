@@ -3,7 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import Card from "@/components/common/Card";
 
 interface OurServiceCardProps {
-  image: StaticImageData;
+  image: string;
   title: string;
   description: string;
 }
